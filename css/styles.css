@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: rgb(134, 198, 255);
+  color: rgb(0, 255, 234);
 }
 
 ul {
@@ -63,7 +63,7 @@ footer {
 }
 
 #last-modified {
-color: rgb(77, 244, 163);
+color: rgb(255, 207, 251);
 font-size: 0.8em;
 }
 
