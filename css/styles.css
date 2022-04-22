@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+
+html {
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+  background-color: #0f5575;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+a {
+  color: rgb(134, 198, 255);
+}
+
+ul {
+  font-size: 1.2em;
+  letter-spacing: 0.06em;
+  font-family: "Courier", 'Courier New', Courier, monospace;
+}
+ul *  {
+  padding-left: 15px;
+}
+
+.drop-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+  border-radius: 20px;
+}
+
+header {
+  background-color: #5d6e1c;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px #000000;
+}
+.page-heading {
+  margin: auto;
+  font-size: 3em;
+}
+
+.section-heading {
+  font-size: 1.8em;
+  padding-left: 30px;
+}
+
+footer {
+  background-color: #5d6e1c;
+  padding: 15px;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+}
+
+#last-modified {
+color: rgb(77, 244, 163);
+font-size: 0.8em;
+}
+
+.emphasized { 
+  font-style: italic;
+  
+}
