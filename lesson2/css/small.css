@@ -7,7 +7,7 @@
 
 :root {
   /* reused colors */
-  --primary-color: rgb(255, 145, 72);
+  --primary-color: rgb(255, 119, 61);
 }
 
 
@@ -51,7 +51,7 @@ main section {
 }
 
 main section h3 {
-  background-color: rgb(236, 217, 140);
+  background-color: rgb(255, 214, 92);
   margin: 0;
   padding: 1em;
 }
@@ -83,6 +83,9 @@ main h1 {
   color: var(--primary-color);
 }
 
+main a {
+  color:rgb(2, 37, 128)
+}
 
 /* footer rules here */
 footer {
