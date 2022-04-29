@@ -1,0 +1,93 @@
+
+
+* { -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+:root {
+  /* reused colors */
+  --primary-color: rgb(209, 85, 54);
+}
+
+
+
+/* body rules here */
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+  background-color: rgb(51, 57, 72);
+}
+
+/* header rules here */
+header {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 0.2%;
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+header h2 {
+  margin-top: 0.5em;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+
+/* main rules here */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 2%;
+  grid-gap: 1em;
+}
+
+main section {
+  background-color: var(--primary-color);
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+main section h3 {
+  background-color: rgb(236, 217, 140);
+  margin: 0;
+  padding: 1em;
+}
+
+main section div {
+  padding: 1em;
+}
+main section div h4 {
+  font-weight: normal;
+}
+
+main section div img {
+  width: 100%;
+  margin-top: 1em;
+  border:2px solid rgb(32, 42, 71);
+}
+main section a {
+  margin-bottom: 1em;
+}
+
+main section p{
+  text-indent: 1em;
+  padding: 1em;
+}
+
+
+
+main h1 {
+  color: var(--primary-color);
+}
+
+
+/* footer rules here */
+footer {
+  text-align: center;
+  padding: 1rem 2%;
+  background-color: var(--primary-color);
+}
+
