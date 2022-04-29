@@ -2,6 +2,13 @@
   -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+
+:root {
+  /* reused colors */
+  --primary-color: rgb(158, 150, 93);
+}
+
+
 /* body rules here */
 body {
    font-family: verdana;
@@ -10,7 +17,7 @@ body {
 
 /* header rules here */
 header {
-  background-color: #1084ff;
+  background-color: var(--primary-color);
   padding: 1rem 2%;
 }
 
@@ -41,7 +48,7 @@ main {
     display: block;
 }
 main h1 {
-  color: #1084ff;
+  color: var(--primary-color);
 }
 
 main figure img {width: 100%;}
@@ -58,5 +65,5 @@ main figcaption {text-align: center; font-size:
   footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #1084ff;
+    background-color: var(--primary-color);
   }
