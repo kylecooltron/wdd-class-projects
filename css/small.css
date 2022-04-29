@@ -11,6 +11,7 @@ body {
 
 .content {
   max-width: 600px;
+  min-width: 250px;
   margin: auto;
   color: white;
 }
@@ -30,14 +31,15 @@ ul *  {
 
 .drop-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 header {
   background-color: #5d6e1c;
-  display: flex;
   padding: 30px;
   align-items: center;
+  text-align:center;
+    margin: 0 auto;
 }
 
 .text-shadow {
@@ -45,7 +47,7 @@ header {
 }
 .page-heading {
   margin: auto;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .section-heading {
