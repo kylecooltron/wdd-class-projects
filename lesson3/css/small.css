@@ -1,0 +1,103 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+    /* colors from my palette */
+
+    --primary-color: #93BF53;
+    --secondary-color: #387366;
+    --accent-color: #2D3E40;
+
+    --main-font-color: rgb(157, 221, 162);
+    --main-headings-color: rgb(161, 224, 89);
+    --background-color: #0b222e;
+    --section-background-color: #69bef0;
+}
+
+
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 18px;
+    font-family: 'Quicksand', Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: aqua;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .8rem 2%;
+    background-color: var(--section-background-color);
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+header div {
+    margin-left:10px;
+}
+
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal; padding-top:5px;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: var(--secondary-color);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #7cccfa;
+    color: var(--accent-color);
+}
+nav ul li.active a {
+    background-color: #87a15f;
+    color: #fff;
+}
+
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    color: var(--main-font-color);
+}
+
+main h1, main h2, main h3, main h4 {
+    font-size: 1.6em;
+    color: var(--main-headings-color);
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--section-background-color);
+    padding: .5rem 2%;
+    text-align: center;
+}
