@@ -14,7 +14,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
     --main-font-color: rgb(157, 221, 162);
     --main-headings-color: rgb(161, 224, 89);
-    --background-color: #0b222e;
+    --background-color: #091c25;
     --section-background-color: #69bef0;
 }
 
@@ -72,7 +72,8 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #7cccfa;
-    color: var(--accent-color);
+    color: black;
+    font-weight: bold;
 }
 nav ul li.active a {
     background-color: #87a15f;
@@ -89,10 +90,14 @@ main {
     color: var(--main-font-color);
 }
 
-main h1, main h2, main h3, main h4 {
+main h1 {
     font-size: 1.6em;
     color: var(--main-headings-color);
 }
+main h2 {
+    color: #b8b963;
+}
+
 
 
 /*----------- FOOTER --------------*/
