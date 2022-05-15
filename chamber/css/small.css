@@ -1,0 +1,167 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+    /* colors from my palette */
+
+    --primary-color: #93BF53;
+    --secondary-color: #387366;
+    --accent-color: #2D3E40;
+
+    --main-font-color: rgb(157, 221, 162);
+    --main-headings-color: rgb(161, 224, 89);
+    --background-color: #091c25;
+    --section-background-color: #69bef0;
+}
+
+
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 18px;
+    font-family: 'Quicksand', Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .8rem 2%;
+    background-color: var(--section-background-color);
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+header div {
+    margin-left:10px;
+}
+
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal; padding-top:5px;}
+
+
+.date {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover {
+    background-color: #7cccfa;
+    color: black;
+    font-weight: bold;
+}
+nav ul li.active a {
+    background-color: #4b6428;
+    color: #fff;
+    
+}
+
+/* Code for responsive hamburger menu ***************/
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    color: var(--main-font-color);
+}
+
+main h1 {
+    font-size: 1.6em;
+    color: var(--main-headings-color);
+}
+main h2 {
+    color: #31c469;
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--section-background-color);
+    padding: .5rem 2%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 1px solid rgba(41, 41, 41, 0.233);
+}
+
+.foot-logo-box {
+    display: block;
+}
+
