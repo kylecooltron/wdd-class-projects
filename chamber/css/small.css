@@ -59,11 +59,29 @@ header h2 {margin: 0; font-weight: normal; padding-top:5px;}
 nav {
     background-color: var(--secondary-color);
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+nav div a {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+nav div {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+nav div a img{
+  
+    height: 100%;
+    vertical-align: middle
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 20%;
 }
 
 nav ul li a {
@@ -106,25 +124,6 @@ nav ul li.active a {
 
 
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-
-
-
 
 
 
@@ -146,6 +145,20 @@ main h2 {
     color: #31c469;
 }
 
+
+.content {
+display: grid;
+grid-template-columns: 1fr;
+padding: 1rem 2%;
+grid-gap: 10px;
+}
+
+section {
+    border: 1px solid silver;
+    margin: 0.2em;
+    padding: 0.5em;
+    min-height: 10em;
+}
 
 
 /*----------- FOOTER --------------*/

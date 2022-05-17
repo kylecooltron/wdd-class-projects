@@ -1,16 +1,17 @@
 
 
 
+
+
+
+
 window.onload=function(){
 
-/* add functionality for responsive hamburger menu*/
+  /* add functionality for responsive hamburger menu*/
 let hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
 
 // select the elements to manipulate (output to)
@@ -31,3 +32,6 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
   document.getElementById("modified").innerHTML = document.lastModified;
 
 }
+
+// To solve the mid resizing issue with responsive class on
+window.onresize = () => {if (window.innerWidth > 1028) mainnav.classList.remove('responsive')};

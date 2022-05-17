@@ -11,17 +11,16 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {
-        display: flex;
-        margin-left: 2%;
-    }
-
-
-    nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
 
+.content {
+  grid-template-columns: 1fr 1fr;
+}
+.content section:nth-child(5) {
+  grid-column: span 2;
+}
 
 
 /*----------- FOOTER --------------*/

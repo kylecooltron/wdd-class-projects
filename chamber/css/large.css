@@ -2,7 +2,7 @@
 @media only screen and (min-width: 64rem) {
 
     header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 90rem;
         margin:auto;
     }
 
@@ -16,11 +16,32 @@
 
 /*----------- NAVIGATION --------------*/
 
+nav {
+    flex-direction: row-reverse;
+}
+nav ul {
+    width: 80%;
+}
 
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+}
+.navigation a {
+    text-align: center;
+}
+.navigation li:first-child {
+    display: none;
+}
 
 /*----------- MAIN --------------*/
 
-
+.content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 /*----------- FOOTER --------------*/
     
