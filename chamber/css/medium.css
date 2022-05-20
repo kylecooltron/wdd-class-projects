@@ -18,10 +18,21 @@
 .content {
   grid-template-columns: 1fr 1fr;
 }
-.content section:nth-child(5) {
+.content section:nth-child(1),
+.content section:nth-child(2) {
   grid-column: span 2;
 }
 
+.content section:nth-child(5), /*SPOTLIGHTS*/
+.content section:nth-child(6) {
+  grid-row: 3;
+}
+
+.content section:nth-child(7) {/*JOIN SECTION*/
+  display: block;
+  grid-row: 4;
+  grid-column: span 2;
+  }
 
 /*----------- FOOTER --------------*/
     
