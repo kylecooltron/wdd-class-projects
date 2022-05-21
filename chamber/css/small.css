@@ -35,19 +35,32 @@ h1, h2, h3, h4{
 
 
 /*----------- HEADER --------------*/
-header {
+
+.announcement-banner {
+min-height: 5em;
+background-color: #53bf73;
+color: black;
+text-align: center;
+display: flex;
+align-items: center; /* Vertical center alignment */
+justify-content: center; /* Horizontal center alignment */
+font-size: 1.1em;
+}
+
+
+.header-content {
     padding: .8rem 2%;
   
     background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
     display: grid;
     grid-template-columns: 100px auto;
 }
-header div {
+.header-content div {
     margin-left:10px;
 }
 
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal; padding-top:5px;}
+.header-content h1 {margin: 0;}
+.header-content h2 {margin: 0; font-weight: normal; padding-top:5px;}
 
 
 .date {
