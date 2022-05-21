@@ -242,13 +242,23 @@ button:hover {
 }
 
 .join {
-    display: flex;
-    justify-content: center;
     text-align:center;
+    position: relative;
+    font-size: 1.1em;
+    color:rgb(85, 255, 107)
 }
-
+.join div{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.join b {
+    color:rgb(143, 248, 157)
+}
 .join button {
-    width:90%;
+    width:70%;
     margin: 0 auto;
 }
 
@@ -256,6 +266,7 @@ button:hover {
 a {
     color:#7dcfff;
 }
+
 
 .text-center{
     text-align:center;
