@@ -1,34 +1,46 @@
+//CHAMBER PROJECT SCRIPT
 
 
-
-
-
-
-
+//wait until page is fully loaded
 window.onload=function(){
 
-  /* add functionality for responsive hamburger menu*/
-let hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
+  /* REUSED VARIABLES*/
+  const now = new Date();
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+  /* ANNOUNCEMENT BANNER */
+
+  const announcementbanner = document.querySelector(".announcement-banner");
+  if( now.getDay() === 2 || now.getDay() === 3){
+    //if today is Monday or Tuesday, display the announcement banner
+    announcementbanner.style.display = "flex";
+  }else{
+    //otherwise do not display it
+    announcementbanner.style.display = "none";
+  }
 
 
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
+  /* HAMBURGER MENU */
 
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
+  let hambutton = document.querySelector('.ham');
+  const mainnav = document.querySelector('.navigation')
+  //add functionality for responsive hamburger menu
+  hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
 
-  // update the text to be the current year
+  /* HEADER DATE */
+
+  const datefield = document.querySelector(".date");
+  // derive the current date using a date object
+  const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+  //set dates text to full date
+  datefield.innerHTML = `<em>${fulldate}</em>`;
+
+
+  /* FOOTER DATE and LAST MODIFIED */
+
+  // update the text in footer to be the current year
   document.querySelector('#year').textContent = new Date().getFullYear();
-
-  //update the last modified text
+  //update the last modified
   document.getElementById("modified").innerHTML = document.lastModified;
 
 }
