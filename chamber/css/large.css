@@ -69,13 +69,15 @@ nav div{
     /*JOIN SECTION*/
   .content section:nth-child(7) {
     grid-column: span 1;
-    grid-row: auto;
-    grid-column: 4;
+    grid-row: 3;
+    grid-column: 1;
     }
 
     /* NEWS RELEASE */
     .content section:nth-child(4) {
         grid-column: span 3;
+        grid-column: 2/5;
+        grid-row: auto;
     }
 
 

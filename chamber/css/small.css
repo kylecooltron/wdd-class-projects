@@ -37,7 +37,8 @@ h1, h2, h3, h4{
 /*----------- HEADER --------------*/
 header {
     padding: .8rem 2%;
-    background-color: var(--section-background-color);
+  
+    background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
     display: grid;
     grid-template-columns: 100px auto;
 }
@@ -53,6 +54,7 @@ header h2 {margin: 0; font-weight: normal; padding-top:5px;}
     grid-column: span 2;
     text-align: center;
     margin-top: 0.4em;
+    
 }
 
 
@@ -159,10 +161,24 @@ grid-gap: 10px;
 }
 
 section {
-    border: 1px solid silver;
+    background-color: #082c36;
+   
     margin: 0.2em;
     padding: 0.5em;
     min-height: 12em;
+}
+
+section hr {
+    border: 1px solid rgba(151, 146, 146, 0.233);
+}
+
+.event-info {
+    font-size: 0.9em;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .hero-action {
@@ -192,15 +208,26 @@ border: 0;
     height: 100%;
 }
 
-.text-center{
-    text-align:center;
+.spotlight img {
+padding: 0.5em;
+}
+.spotlight h3 {
+    margin: 0.3em;
+    color:rgb(6, 175, 253)
+}
+.spotinfo {
+font-size: 0.8em;
+margin: 0;
+}
+.spotinfo div {
+    padding-bottom: 0.4em;
+    letter-spacing: 0.1em;
+    font-style:italic;
 }
 
 .content section:nth-child(7) { /*JOIN SECTION*/
 display: none;
 }
-
-
 
 button {
     padding: 0.6rem;
@@ -226,10 +253,24 @@ button:hover {
 }
 
 
+a {
+    color:#7dcfff;
+}
+
+.text-center{
+    text-align:center;
+}
+.tiny-text{
+    font-size: 0.5em;
+    vertical-align: super;
+    color:rgb(111, 173, 202)
+}
+
+
 /*----------- FOOTER --------------*/
 footer {
-    background-color: var(--section-background-color);
-    padding: .5rem 2%;
+    background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
+  
     text-align: center;
     font-weight: bold;
     font-size: 0.9em;
@@ -241,5 +282,11 @@ hr {
 
 .foot-logo-box {
     display: block;
-}
+    padding: 1.5em;
 
+}
+.foot-info-box {
+    padding: 1em;
+    background-color: var(--section-background-color);
+    padding-bottom: 1.6em;
+}

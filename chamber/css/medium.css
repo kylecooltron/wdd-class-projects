@@ -21,8 +21,7 @@ nav ul {
 .content {
   grid-template-columns: 1fr 1fr;
 }
-.content section:nth-child(1),
-.content section:nth-child(2) {
+.content section:nth-child(1) {
   grid-column: span 2;
 }
 
@@ -36,6 +35,12 @@ nav ul {
   grid-row: 4;
   grid-column: span 2;
   }
+
+    /* NEWS RELEASE */
+    .content section:nth-child(4) {
+    grid-row: 2;
+    grid-column: span 2;
+    }
 
 /*----------- FOOTER --------------*/
     
