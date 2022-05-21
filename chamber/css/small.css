@@ -41,7 +41,7 @@ min-height: 5em;
 background-color: #53bf73;
 color: black;
 text-align: center;
-display: flex;
+display: none;
 align-items: center; /* Vertical center alignment */
 justify-content: center; /* Horizontal center alignment */
 font-size: 1.1em;
