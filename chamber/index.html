@@ -30,6 +30,7 @@
       rel="stylesheet"
     />
     <script src="js/chamber-script.js"></script>
+    <script src="js/windchill.js"></script>
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
@@ -40,7 +41,7 @@
     <!-- HEADER HERE -->
     <header>
       <div class="header-content">
-        <img src="images/logo.png" alt="Smith River Commerce Logo" />
+        <img src="images/logo.webp" alt="Smith River Commerce Logo" />
         <div>
           <h1>Smith River Commerce</h1>
           <h2>We are stronger together</h2>
@@ -77,10 +78,18 @@
 
       <div class="content">
         <section class="hero-action">
-          <img
-            src="images/hero-image.jpg"
-            alt="image of Smith River, California"
-          />
+          <picture>
+            <source media="(min-width:1080px)" srcset="images/heroSrc.jpg" />
+            <source
+              media="(min-width:650px)"
+              srcset="images/heroSrc-medium.jpg"
+            />
+            <img
+              src="images/heroSrc-small.jpg"
+              alt="image of Smith River, California"
+            />
+          </picture>
+
           <h2>Welcome to Smith River</h2>
           <button type="submit">Join the Chamber</button>
         </section>
@@ -116,6 +125,8 @@
             <div>74%</div>
             <div>Wind:</div>
             <div>16 mph</div>
+            <div>Windchill:</div>
+            <div><span id="windChill"></span>></div>
           </div>
         </section>
         <section class="text-center">
