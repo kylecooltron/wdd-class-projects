@@ -1,9 +1,6 @@
 //CHAMBER PROJECT SCRIPT
 
 
-//wait until page is fully loaded
-window.onload=function(){
-
   /* REUSED VARIABLES*/
   const now = new Date();
 
@@ -43,7 +40,7 @@ window.onload=function(){
   //update the last modified
   document.getElementById("modified").innerHTML = document.lastModified;
 
-}
+  // To solve the mid resizing issue with responsive class on
+  window.onresize = () => {if (window.innerWidth > 1028) mainnav.classList.remove('responsive')};
 
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 1028) mainnav.classList.remove('responsive')};
+
