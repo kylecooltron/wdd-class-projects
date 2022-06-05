@@ -83,10 +83,10 @@ nav div{
 
     .discover-grid {
         grid-template-columns: 1fr 1.7fr;
-        grid-gap: 7rem 4rem; 
+        grid-gap: 4rem 10rem; 
         align-items: center;
+        margin: auto;
       }
-
 
 /*----------- FOOTER --------------*/
     

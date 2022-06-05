@@ -42,7 +42,10 @@ nav ul {
     grid-column: span 2;
     }
 
-
+    .discover-grid{
+      margin: 4rem;
+      grid-gap: 2rem; 
+    }
 /*----------- FOOTER --------------*/
     
 .foot-logo-box{
