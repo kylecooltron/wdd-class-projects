@@ -183,6 +183,49 @@ main picture img {
     grid-gap: 10px;
 }
 
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2%;
+    grid-gap: 1rem; 
+}
+
+.discover-grid figure {
+    background-color: #07242c;
+    padding: 1em;
+    margin: 0;
+    border-radius: 0.3em;
+}
+.discover-grid figcaption{
+    padding: 0.5em;
+    margin: 1em 0 0 0.5em;
+    font-style: italic;
+}
+.discover-grid img {
+    width: 95%;
+    transition: 0.2s;
+}
+.discover-grid img:hover {
+    box-shadow: 0 0 20px rgb(16, 111, 128);
+    outline: 1px solid rgb(9, 77, 67);
+}
+.discover-item {
+    background-color: #07242c;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+/* for lazy loading - blur images transition*/
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
 section {
     background-color: #07242c;
    

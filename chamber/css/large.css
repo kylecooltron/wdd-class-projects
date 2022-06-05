@@ -81,6 +81,11 @@ nav div{
     }
 
 
+    .discover-grid {
+        grid-template-columns: 1fr 1.7fr;
+        grid-gap: 7rem 4rem; 
+        align-items: center;
+      }
 
 
 /*----------- FOOTER --------------*/
