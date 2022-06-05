@@ -224,6 +224,16 @@ picture img {
     transition: filter 0.5s;
 }
 
+.last-visit {
+    text-align: center;
+    background-color: #7a8591;
+    color:black;
+    font-weight: bold;
+    font-size: 0.9em;
+
+    letter-spacing: 0.08em;
+    padding: 0.5em;
+}
 
 section {
     background-color: #07242c;
