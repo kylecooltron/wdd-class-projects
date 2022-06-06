@@ -88,6 +88,18 @@ nav div{
         margin: auto;
       }
 
+      
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 1%;
+        grid-gap: 0.1rem; 
+      }
+      .benefits-table {
+      display:inline-block;
+      border: none;
+      }
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

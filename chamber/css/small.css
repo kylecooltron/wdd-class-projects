@@ -224,6 +224,82 @@ picture img {
     transition: filter 0.5s;
 }
 
+
+
+.form-container{
+    margin: 2rem;
+}
+
+.benefits-table {
+    filter: drop-shadow(5px 5px 4px #1d476996);
+    margin: 2em; 
+    max-width: 20em;
+    display:none;
+}
+.benefits-table tr:nth-child(1){
+    color: gold;
+    font-size: 1.3em;
+}
+.benefits-table tr:nth-child(2) th{
+    color: white;
+}
+.benefits-table tr:nth-child(3) th{
+    color: brown;
+}
+.benefits-table tr:nth-child(4) th{
+    color: silver;
+}
+.benefits-table tr:nth-child(5) th{
+    color: gold;
+}
+  table, th, td{
+    border:1px solid rgb(185, 185, 185);
+    border-collapse: collapse;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+
+
+form {
+    border: 1px solid #31c469;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+form label {
+display: block;
+padding-top: 1rem;
+font-size: 1rem;
+color:rgb(194, 241, 175);
+}
+form label input {
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+form label input:required{
+    border-left: red solid 6px;
+}
+form label input:required:valid{
+    border-left: lime solid 6px;
+}
+form label select{
+    margin-left:1em;
+}
+form button {
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .last-visit {
     text-align: center;
     background-color: #7a8591;
