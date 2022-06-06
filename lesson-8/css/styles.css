@@ -3,6 +3,7 @@
 table {
   font-family: 'Ubuntu', sans-serif;
   filter: drop-shadow(5px 5px 4px #1d476996);
+  margin: 3em;
 }
 
 table, th, td{
