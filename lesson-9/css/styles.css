@@ -2,7 +2,38 @@
 
 
 
-.grid {
+
+body{
+  background-color: #253836;
+  max-width: 90rem;
+}
+
+h1 {
+  color: rgb(171, 209, 191);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.8em;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+  background-color: #3b565f;
+}
+
+.cards section{
+  text-align: center;
+  background-image: linear-gradient( #5f948f , #ddff9d, #3f5351 98%, #2a3535 );
+}
+
+.cards section img{
+  width: 90%;
+  margin-bottom: 1em;;
+}
+
+.cards section h2 {
+  text-shadow: 0 2px 3px rgba(14, 50, 83, 0.2);
 }
