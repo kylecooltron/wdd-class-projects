@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Smith River Commerce Project: Website Planning Document"
+      content="Smith River Commerce Project: Directory Page"
     />
     <meta name="author" content="Kyle Coulon" />
 
@@ -63,7 +63,7 @@
         <li><a class="ham" href="#">☰</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -73,22 +73,8 @@
 
     <main>
       <div class="content-container">
-        <h1>Thank you!</h1>
-        <p>Please check your email to confirm your membership!</p>
-        <p>
-          We look forward to meeting you and working together to grow our
-          community.
-        </p>
-        <br />
-        <br />
-        <br />
-
-        click <a href="index.html">here</a> to get back to the home page.
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <h1>Directory</h1>
+        <div class="directory-grid"></div>
       </div>
     </main>
 
@@ -117,7 +103,8 @@
         <span id="modified">last modified</span>
       </div>
       <script src="js/chamber-script.js"></script>
-      <script src="js/join-script.js"></script>
+      <script src="js/lazyload-script.js"></script>
+      <script src="js/directory-script.js"></script>
     </footer>
   </body>
 </html>

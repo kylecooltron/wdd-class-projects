@@ -1,0 +1,75 @@
+{
+  "businesses": [
+    {
+      "name": "A&C Fisheries",
+      "address": "702 W Cobble Street",
+      "phone": "(320) 555-2017",
+      "website": "acfisheries.com",
+      "imageurl": "images/logo1AC.png",
+      "membership": "gold"
+     },
+     {
+      "name": "Big Horn Lodge",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo2BL.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Lola's Barbeque",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo3LB.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Riverside Market",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "rsmarket.org",
+      "imageurl": "images/logo4RM.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "West Point Aquatics",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo5WP.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Big Raft Adventures",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo6BR.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Outdoor Escape Park",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo7OO.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Belle's Fine Cuisine",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo8BF.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Yugi Spa",
+      "address": "1008 S 2100 E",
+      "phone": "1 (800) 241-5622",
+      "website": "garysmod.com",
+      "imageurl": "images/logo9Y.png",
+      "membership": "bronze"
+     }]
+  }

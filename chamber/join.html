@@ -63,7 +63,7 @@
         <li><a class="ham" href="#">☰</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a href="#">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li class="active"><a href="join.html">Join</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -123,6 +123,7 @@
             <label for="email">
               Email*
               <input
+                id="email"
                 type="email"
                 placeholder="youremail@website.com"
                 name="email"
@@ -131,7 +132,7 @@
             </label>
             <label for="phone">
               Phone Number*
-              <input type="tel" name="phone" required />
+              <input id="phone" type="tel" name="phone" required />
             </label>
 
             <label for="business">
@@ -151,10 +152,21 @@
 
             <label for="description">
               Business Description
-              <input type="textarea" id="description" name="description" />
+              <textarea
+                id="description"
+                name="description"
+                rows="4"
+                cols="50"
+              ></textarea>
             </label>
 
-            <input type="hidden" id="DateTime" name="DateTime" value="" />
+            <input
+              id="vldate"
+              type="hidden"
+              id="DateTime"
+              name="DateTime"
+              value=""
+            />
 
             <button type="submit" class="signupbtn">Sign Up</button>
           </form>
