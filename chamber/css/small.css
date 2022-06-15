@@ -313,9 +313,11 @@ form button {
 
 section {
     background-color: #07242c;
-   
     margin: 0.2em;
     padding: 0.5em;
+}
+
+.conter section {
     min-height: 12em;
 }
 
@@ -466,21 +468,27 @@ text-align: end;
 
 
 .directory-grid {
-color: white;
-margin-bottom: 2em;
+    color: white;
+    margin-bottom: 2em;
 }
 
-.directory-grid section{
+.directory-grid section {
     padding: 2em;
     margin: 2em;
-    display: flex;
-justify-content: space-between;
-align-items: center;
+    display: grid;
+
+    align-items: center;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
 }
 
-.directory-grid img{
+.directory-grid img {
     display: none;
 }
+
+.directory-grid section a {
+    text-align: right;
+}
+
 
 /* panel view */
 .panelview {
@@ -492,6 +500,7 @@ align-items: center;
     margin: 0.4em;
     padding: 1em;
     text-align: center;
+    
     display: block;
     justify-content: auto;
     align-items: auto;
