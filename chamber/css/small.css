@@ -447,13 +447,13 @@ a {
 text-align: end;
 }
 #dir-panel{
-    background-image: url(images/dirview_panel.png);
+    background-image: url(../images/dirview_panel.png);
     background-size: 73px 73px;
     height: 75px;
     width: 75px;
 }
 #dir-list{
-    background-image: url(images/dirview_list.png);
+    background-image: url(../images/dirview_list.png);
     background-size: 73px 73px;
     height: 75px;
     width: 75px;
