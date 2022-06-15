@@ -47,6 +47,13 @@ nav ul {
       grid-gap: 2rem; 
     }
 
+    .directory-grid section {
+      grid-template-columns: 2fr;
+    }
+
+    .panelview {
+      grid-template-columns: 1fr 1fr;
+  }
 /*----------- FOOTER --------------*/
     
 .foot-logo-box{

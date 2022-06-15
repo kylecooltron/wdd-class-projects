@@ -100,6 +100,16 @@ nav div{
       border: none;
       }
 
+      .directory-grid section {
+        grid-template-columns: 2fr 2fr 2fr 1fr;
+      }
+
+
+      .panelview {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

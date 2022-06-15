@@ -478,7 +478,7 @@ text-align: end;
     display: grid;
 
     align-items: center;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .directory-grid img {
@@ -493,7 +493,7 @@ text-align: end;
 /* panel view */
 .panelview {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
 }
 
 .panelview section {
