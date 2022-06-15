@@ -474,7 +474,7 @@ text-align: end;
 
 .directory-grid section {
     padding: 2em;
-    margin: 2em;
+    margin: 0.4em 0.4em 2em 0.4em;
     display: grid;
 
     align-items: center;
