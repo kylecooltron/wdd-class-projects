@@ -440,6 +440,66 @@ a {
 }
 
 
+/*directory page*/
+.dir-buttons{
+text-align: end;
+}
+#dir-panel{
+    background-image: url(/chamber/images/dirview_panel.png);
+    background-size: 73px 73px;
+    height: 75px;  
+    width: 75px;
+}
+#dir-list{
+    background-image: url(/chamber/images/dirview_list.png);
+    background-size: 73px 73px;
+    height: 75px;  
+    width: 75px;
+}
+.dir-buttons button{
+    background-color: rgba(60, 193, 255, 0.096);
+    margin: -2em 1em 2em 1em;
+}
+.dir-buttons button:focus{
+    background-color: rgb(60, 193, 255);
+}
+
+
+.directory-grid {
+color: white;
+}
+
+.directory-grid section{
+    padding: 2em;
+    margin: 2em;
+}
+
+.directory-grid img{
+    display: none;
+}
+
+/* panel view */
+.panelview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.panelview section {
+    margin: 0.4em;
+    padding: 1em;
+}
+
+.panelview img{
+    background-color: rgb(53, 106, 114);
+    padding: 1em;
+    display: block;
+    margin: auto;
+    width: 70%;
+    box-shadow:  5px 5px 10px #0000007c;
+    border-radius: 5px;
+}
+
 /*----------- FOOTER --------------*/
 footer {
     background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);

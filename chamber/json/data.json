@@ -18,58 +18,58 @@
      },
      {
       "name": "Lola's Barbeque",
-      "address": "1008 S 2100 E",
-      "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "address": "112 S 40 E",
+      "phone": "(320) 211-5522",
+      "website": "llbarbeque.com",
       "imageurl": "images/logo3LB.png",
-      "membership": "bronze"
+      "membership": "silver"
      },
      {
       "name": "Riverside Market",
-      "address": "1008 S 2100 E",
-      "phone": "1 (800) 241-5622",
+      "address": "96 Market St",
+      "phone": "(802) 211-1152",
       "website": "rsmarket.org",
       "imageurl": "images/logo4RM.png",
       "membership": "bronze"
      },
      {
       "name": "West Point Aquatics",
-      "address": "1008 S 2100 E",
-      "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "address": "71 Galvan Pier",
+      "phone": "1 (800) 441-7512",
+      "website": "westpointaquatics.org",
       "imageurl": "images/logo5WP.png",
-      "membership": "bronze"
+      "membership": "gold"
      },
      {
       "name": "Big Raft Adventures",
-      "address": "1008 S 2100 E",
+      "address": "9004 Brookside Road",
       "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "website": "bigraft.com",
       "imageurl": "images/logo6BR.png",
-      "membership": "bronze"
+      "membership": "gold"
      },
      {
       "name": "Outdoor Escape Park",
-      "address": "1008 S 2100 E",
+      "address": "107 S 30 E",
       "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "website": "escapervpark.com",
       "imageurl": "images/logo7OO.png",
       "membership": "bronze"
      },
      {
       "name": "Belle's Fine Cuisine",
-      "address": "1008 S 2100 E",
+      "address": "108 S 30 E",
       "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "website": "bellesrestaurant.com",
       "imageurl": "images/logo8BF.png",
-      "membership": "bronze"
+      "membership": "silver"
      },
      {
       "name": "Yugi Spa",
-      "address": "1008 S 2100 E",
+      "address": "134 S 2100 E",
       "phone": "1 (800) 241-5622",
-      "website": "garysmod.com",
+      "website": "yugi.com",
       "imageurl": "images/logo9Y.png",
-      "membership": "bronze"
+      "membership": "basic"
      }]
   }
