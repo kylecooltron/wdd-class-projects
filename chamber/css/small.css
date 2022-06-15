@@ -467,6 +467,7 @@ text-align: end;
 
 .directory-grid {
 color: white;
+margin-bottom: 2em;
 }
 
 .directory-grid section{
@@ -498,6 +499,7 @@ color: white;
     width: 70%;
     box-shadow:  5px 5px 10px #0000007c;
     border-radius: 5px;
+    max-width: 200px;
 }
 
 /*----------- FOOTER --------------*/

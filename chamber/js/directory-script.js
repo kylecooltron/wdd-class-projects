@@ -15,10 +15,11 @@ fetch(requestURL)
   function displayProphets(business) {
     // Create elements to add to the document
     let card = document.createElement('section');
+    let iconImg = document.createElement('img');
     let h2 = document.createElement('h2');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
-    let iconImg = document.createElement('img');
+    let a = document.createElement('a');
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     iconImg.setAttribute('src', business.imageurl);
@@ -34,14 +35,16 @@ fetch(requestURL)
     // Change the textContent property of the p2 element to contain the business phone
     p2.textContent = business.phone;
 
- 
+    // Change the textContent and href property of the a element to contain the business website
+    a.textContent = business.website;
+    a.setAttribute('href', business.website);
   
     // Add/append the section(card) with the h2 element
     card.appendChild(iconImg);
     card.appendChild(h2);
     card.appendChild(p1);
     card.appendChild(p2);
-
+    card.appendChild(a);
   
     // Add/append the existing HTML div with the '.directory-grid' class with the section(card)
     document.querySelector('.directory-grid').appendChild(card);
