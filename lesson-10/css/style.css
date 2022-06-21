@@ -1,0 +1,32 @@
+
+
+
+.weather-card
+{
+width: 40%;
+border: 1px solid black;
+border-radius: 1em;
+padding: 1em;
+margin: 0 auto;
+background: linear-gradient(rgb(146, 208, 233), rgb(230, 223, 193));
+}
+
+.weather-card figure
+{
+width: 20%;
+padding: 1em;
+margin: 0;
+text-align: center;
+}
+
+.weather-card img
+{
+border: 1px solid rgba(32, 162, 238, 0.226);
+background-color: white;
+border-radius: 1em;
+padding: 0.5em;
+}
+.weather-card figcaption
+{
+  text-align: center;
+}
