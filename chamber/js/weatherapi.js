@@ -27,11 +27,11 @@ function interpolate_color(startcolor, endcolor, percent){
 function get_temp_color(temperature){
   let tempcolor = [0,0,0];
   // adjust temperature to be a useful decimal
-  temperature = (temperature-29.8)*0.01;
+  temperature = ((temperature*1.25)-30)*0.01;
   if(temperature <= 0.5){   // blue to yellow
   tempcolor = interpolate_color([0,90,200],[255,255,0],temperature*2);
   }else{                    // yellow to red
-  tempcolor = interpolate_color([255,255,0],[255,0,0],(temperature*2)-0.5);
+  tempcolor = interpolate_color([255,255,0],[255,0,0],(temperature-0.5)*2);
   }
   //return as rgb(0,0,0) string
   return "rgb(" + tempcolor[0] + "," + tempcolor[1] + "," + tempcolor[2] + ")";
@@ -45,7 +45,7 @@ fetch(APIurl)
     console.log(weatherinfo); // this is temporary for development only
 
     //set temperature and temperature text color
-    let temp = weatherinfo.main.temp.toFixed(0);
+    let temp = 30;//weatherinfo.main.temp.toFixed(0);
     currentTemp.innerHTML = `<strong>${temp}</strong>`;
     currentTempText.style.color = get_temp_color(temp);
 
