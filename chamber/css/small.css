@@ -416,14 +416,46 @@ button:hover {
 }
 
 
+.weather-temp
+{
+font-size: 1.3em;
+}
+
 .weather-box {
     font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding: 0.6em;
+    margin: 0 auto;
 }
+
+.weather-box figure{
+margin: 0;
+}
+
+.weather-box figure img{
+    background: linear-gradient(rgb(65, 179, 255), rgb(211, 211, 81));
+    border-radius: 5px;
+    margin-top: 0.1em;
+}
+
+.weather-box figcaption{
+    font-size: 0.6em;
+}
+
+h4 {
+    font-size: 2em;
+    margin: 0.5em 0 0 0;
+}
+
 .weather-grid{
     display: grid;
 grid-template-columns: 1fr 1fr;
 padding: 1rem 2%;
 grid-gap: 5px;
+text-align: left;
+margin-left: 2em;
 }
 
 

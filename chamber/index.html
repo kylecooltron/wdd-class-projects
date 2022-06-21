@@ -106,26 +106,23 @@
             </div>
           </section>
           <section class="text-center">
-            <h3>Weather</h3>
+            <h4>Weather</h4>
             <div class="weather-box">
-              <img
-                src="images/partly-cloudy.png"
-                alt="image of weather partly cloudy"
-              />
-              <em
-                ><span class="weather-temp">56</span>
-                <span class="tiny-text">°F</span></em
-              >
+              <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+              </figure>
+              <em>
+                <span class="weather-temp" id="current-temp">56</span>&deg;
+                <span class="tiny-text"> F </span>
+              </em>
             </div>
-            <h4>Partly Cloudy</h4>
             <hr />
             <div class="weather-grid">
-              <div>Precipitation:</div>
-              <div>1%</div>
               <div>Humidity:</div>
-              <div>74%</div>
+              <div><span id="current-humidity"></span></div>
               <div>Wind:</div>
-              <div><span class="weather-wind">16</span> mph</div>
+              <div><span id="current-wind"></span> mph</div>
               <div>Windchill:</div>
               <div>
                 <span id="windchill"></span>
@@ -209,7 +206,7 @@
         <span id="modified">last modified</span>
       </div>
       <script src="js/chamber-script.js"></script>
-      <script src="js/windchill.js"></script>
+      <script type="module" src="js/weatherapi.js"></script>
     </footer>
   </body>
 </html>

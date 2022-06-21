@@ -1,8 +1,10 @@
 
 
+export default function update_windchil(){
+
 //extract values to calculate wind chill from page
-let temp = Number(document.querySelector(".weather-temp").innerHTML);
-let wSpeed= Number(document.querySelector(".weather-wind").innerHTML);
+let temp = Number(document.querySelector("#current-temp").innerHTML);
+let wSpeed= Number(document.querySelector("#current-wind").innerHTML);
 // default windChill value is "N/A"
 let windChill = "N/A";
 // "Wind Chill Temperature is officially defined for temperatures at or below (50 °F) and wind speeds above (3.0 mph).
@@ -17,3 +19,5 @@ windChill= Math.round(windChill);
 
 // display the calculated windchill
 document.getElementById("windchill").innerHTML= windChill;
+
+}
