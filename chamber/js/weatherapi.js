@@ -45,7 +45,7 @@ fetch(APIurl)
     console.log(weatherinfo); // this is temporary for development only
 
     //set temperature and temperature text color
-    let temp = 30;//weatherinfo.main.temp.toFixed(0);
+    let temp = weatherinfo.main.temp.toFixed(0);
     currentTemp.innerHTML = `<strong>${temp}</strong>`;
     currentTempText.style.color = get_temp_color(temp);
 
