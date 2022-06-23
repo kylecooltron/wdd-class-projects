@@ -65,30 +65,77 @@
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <!-- CONTENT HERE -->
 
     <main>
-      <div class="content-container">
-        <h1>Thank you!</h1>
-        <p>Please check your email to confirm your membership!</p>
-        <p>
-          We look forward to meeting you and working together to grow our
-          community.
-        </p>
-        <br />
-        <br />
-        <br />
+      <div class="contact-banner-container">
+        <picture>
+          <img
+            src="images/contactus-banner.jpg"
+            alt="image of Smith River, California"
+          />
+          <div><h1>Contact Us</h1></div>
+        </picture>
+      </div>
 
-        click <a href="index.html">here</a> to get back to the home page.
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <div class="content-container">
+        <div class="form-container">
+          <div class="contact-info-card">
+            <div>
+              <h3>Contact Information</h3>
+              <dl>
+                <dt>Email</dt>
+                <dd>contact@smithrivercommerce.com</dd>
+
+                <dt>Phone</dt>
+                <dd>1 (302) 589-2044</dd>
+
+                <dt>Address</dt>
+                <dd>100 e 2005 w Creek St.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <form action="thankyou.html" method="get">
+            <h2>Submit a question</h2>
+            <p>Please fill in this form to submit a question.</p>
+            <hr />
+
+            <label for="fname">
+              Name*
+              <input type="text" id="fname" name="fname" required />
+            </label>
+
+            <label for="email">
+              Email*
+              <input
+                id="email"
+                type="email"
+                placeholder="youremail@website.com"
+                name="email"
+                required
+              />
+            </label>
+
+            <label for="description">
+              Question
+              <textarea
+                id="description"
+                name="description"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </label>
+
+            <input type="hidden" id="DateTime" name="DateTime" value="" />
+
+            <button type="submit" class="signupbtn">Submit</button>
+          </form>
+        </div>
       </div>
     </main>
 

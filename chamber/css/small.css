@@ -284,6 +284,11 @@ form label input {
     border-radius: 4px;
     margin-top: 4px;
 }
+form label textarea
+{
+    width: 100%;
+    margin-top: 0.5em;
+}
 form label input, form label select, form label textarea{
     background-color: rgb(174, 222, 250);
 }
@@ -576,6 +581,60 @@ text-align: end;
     box-shadow:  5px 5px 10px #0000007c;
     border-radius: 5px;
     max-width: 200px;
+}
+
+/* contact page */
+
+.contact-banner-container
+{
+    position: relative;
+    text-align: center;
+}
+
+.contact-banner-container picture img
+{
+    width: 100%;
+}
+.contact-banner-container picture div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-banner-container picture div h1
+{
+    color:rgb(255, 255, 255);
+    font-size: 2em;
+}
+
+
+.contact-info-card
+{
+    max-width: 30rem;
+    margin: auto auto;
+}
+
+.contact-info-card div
+{
+    margin: 1.5em;
+    padding: 1em 2em 2em 2em;
+    border-radius: 5px;
+    background: linear-gradient(rgb(195, 235, 195), rgb(120, 173, 182) 95%, rgb(54, 88, 94));
+    color: rgb(42, 66, 94);
+}
+
+.contact-info-card dl dt
+{
+padding: 0.4em;
+font-weight: bold;
+}
+
+.contact-info-card dl dd
+{
+margin-bottom: 1em;
+margin-left: 0.4em;
+font-weight: normal;
 }
 
 /*----------- FOOTER --------------*/
