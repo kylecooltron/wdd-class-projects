@@ -37,7 +37,7 @@ fetch(requestURL)
 
     // Change the textContent and href property of the a element to contain the business website
     a.textContent = business.website;
-    a.setAttribute('href', business.website);
+    a.setAttribute('href', "https://www.youtube.com/user/kylecoulon");
   
     // Add/append the section(card) with the h2 element
     card.appendChild(iconImg);

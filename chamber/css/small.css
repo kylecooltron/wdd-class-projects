@@ -284,6 +284,9 @@ form label input {
     border-radius: 4px;
     margin-top: 4px;
 }
+form label input, form label select, form label textarea{
+    background-color: rgb(174, 222, 250);
+}
 form label input:required{
     border-left: red solid 6px;
 }
@@ -432,7 +435,7 @@ font-size: 1.3em;
 
 .weather-box figure{
 margin: 0;
-color: rgb(0, 90, 207);
+color: rgb(83, 150, 238);
 }
 
 .weather-box figure img{
@@ -463,14 +466,41 @@ margin-left: 2em;
 a {
     color:#7dcfff;
 }
-
-
+.foot-logo-box a{
+    color:#073ccc;
+}
+.section-news
+{
+    text-align: left;
+    margin: 0 3em 1em 3em;
+    padding: 0.5em 1em;
+    background-color: #083035;
+    border-radius: 10px;
+    color:rgb(185, 218, 247);
+}
+.section-news h3{
+    text-align: center;
+    padding-left: 0;
+}
+.news-title
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color:rgb(214, 224, 224);
+}
+.news-date
+{
+    font-size: 0.7em;
+    margin: 0.9em 1em;
+}
 .text-center{
     text-align:center;
 }
 .tiny-text{
-    font-size: 0.5em;
+    font-size: 0.4em;
     vertical-align: super;
+    margin-left: -7px;
 }
 
 
@@ -538,7 +568,7 @@ text-align: end;
 }
 
 .panelview img{
-    background-color: rgb(53, 106, 114);
+    background-color: rgb(78, 134, 160);
     padding: 1em;
     display: block;
     margin: auto;
