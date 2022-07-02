@@ -55,6 +55,9 @@ nav ul {
       grid-template-columns: 1fr 1fr;
   }
 
+  .spotlight img {
+    width: 60%;
+  }
 
   #forecast-container
 {

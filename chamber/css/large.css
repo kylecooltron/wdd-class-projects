@@ -116,7 +116,10 @@ nav div{
         font-size: 1.2em;
     }
 
+    .spotlight img {
+      width: 60%;
 
+    }
     
     #forecast-container
     {
