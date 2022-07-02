@@ -47,6 +47,17 @@ justify-content: center; /* Horizontal center alignment */
 font-size: 1.1em;
 }
 
+.weather-warning-banner {
+    padding-top: 0.3em;
+    min-height: 2em;
+    background-color: #eb5050;
+    color: black;
+    text-align: center;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    font-size: 2.1em;
+    }
+
 
 .header-content {
     padding: .8rem 2%;

@@ -15,6 +15,31 @@
     announcementbanner.style.display = "none";
   }
 
+    /* BAD WEATHER BANNER */
+
+  // hide bad weather banner (default)
+  const badweatherbanner = document.querySelector(".weather-warning-banner");
+  badweatherbanner.style.display = "none";
+    
+    //API URL with arguments  
+    const APIAlerturl = "//api.openweathermap.org/data/2.5/onecall?lat=41.55&lon=-124.08&exclude=hourly,daily&appid=7c894b69ae7ae90c1d0eac7949ebdf76";
+
+    fetch(APIAlerturl)
+      .then((response) => response.json())
+      .then((weatherinfo) => {
+        // IF THERE IS BAD WEATHER
+        if(weatherinfo.alerts != undefined){
+        badweatherbanner.innerHTML += `<strong>EVENT: ${weatherinfo.alerts.event} DESCRIPTION: ${weatherinfo.alerts.description}</strong>`;
+        badweatherbanner.style.display = "block";
+        }
+     
+      });
+    
+
+
+
+
+
 
   /* HAMBURGER MENU */
 
