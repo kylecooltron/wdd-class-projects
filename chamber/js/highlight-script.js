@@ -6,7 +6,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
     const businesses = jsonObject['businesses'];
     chooseHighlights(businesses);
   });
@@ -26,14 +25,17 @@ fetch(requestURL)
     displayHighlight(shuffledMembership[0], "#spotlight1");
     displayHighlight(shuffledMembership[1], "#spotlight2");
 
+    //slice off the two we've just used from the list
+    const slicedMembership = shuffledMembership.slice(2);
+
     // make sure the last spotlight is gold
-    const filteredGold = filteredMembership.filter(function (business) {
+    const filteredGold = slicedMembership.filter(function (business) {
       return business.membership == "gold";
     });
 
     // populate element
     displayHighlight(filteredGold[0], "#spotlight3");
-    
+
   }
 
   
@@ -76,6 +78,8 @@ fetch(requestURL)
 
     // Get container
     const spotlightContainer = document.querySelector(elementID)
+
+    spotlightContainer.removeChild(spotlightContainer.firstElementChild);
 
     // Add/append the spotlightContainer with the new elements
     spotlightContainer.appendChild(h3);

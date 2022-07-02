@@ -42,8 +42,6 @@ fetch(APIurl)
   .then((response) => response.json())
   .then((weatherinfo) => {
 
-    console.log(weatherinfo); // this is temporary for development only
-
     //set temperature and temperature text color
     let temp = weatherinfo.main.temp.toFixed(0);
     currentTemp.innerHTML = `<strong>${temp}</strong>`;

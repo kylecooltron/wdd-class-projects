@@ -330,7 +330,7 @@ section {
 }
 
 section hr {
-    border: 1px solid rgba(151, 146, 146, 0.233);
+    border: 1px solid rgba(151, 146, 146, 0.048);
 }
 
 .event-info {
@@ -644,7 +644,7 @@ text-align: end;
     padding: 1em 2em 2em 2em;
     border-radius: 5px;
     background: linear-gradient(rgb(195, 235, 195), rgb(120, 173, 182) 95%, rgb(54, 88, 94));
-    color: rgb(42, 66, 94);
+    color: rgb(0, 0, 0);
 }
 
 .contact-info-card dl dt
