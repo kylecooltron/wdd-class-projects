@@ -109,7 +109,25 @@ nav div{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+  
+    .outside-div
+    {
+        padding: 1.5em 7.5em;
+        font-size: 1.2em;
+    }
 
+
+    
+    #forecast-container
+    {
+    max-width: 30em;
+    }
+
+    #forecast-div{
+      display: flex;
+      flex-direction: row;
+      grid-gap: 0;
+    }
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

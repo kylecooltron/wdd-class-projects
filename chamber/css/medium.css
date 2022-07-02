@@ -54,6 +54,16 @@ nav ul {
     .panelview {
       grid-template-columns: 1fr 1fr;
   }
+
+
+  #forecast-container
+{
+max-width: 30em;
+}
+
+#forecast-div{
+  grid-gap: 1em 5em;
+}
 /*----------- FOOTER --------------*/
     
 .foot-logo-box{

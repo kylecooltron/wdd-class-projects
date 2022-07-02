@@ -261,7 +261,7 @@ picture img {
 
 
 
-form {
+.form-container form {
     border: 1px solid #31c469;
     padding: 1rem;
     margin: 1rem;
@@ -301,7 +301,7 @@ form label input:required:valid{
 form label select{
     margin-left:1em;
 }
-form button {
+.form-container form button {
     margin-top: 1rem;
     position: relative;
     left: 50%;
@@ -658,6 +658,60 @@ font-weight: bold;
 margin-bottom: 1em;
 margin-left: 0.4em;
 font-weight: normal;
+}
+
+
+.outside-div
+{
+    background-color: #07242c;
+    margin: 0.2em 2.5%;
+    padding: 1.5em 2em;
+    line-height: 1.5em;
+    font-size: large;
+}
+.outside-div em
+{
+color: white;
+padding-right: 0.3em;
+}
+
+
+.forecast-box{
+    text-align: center;
+    background: linear-gradient(to right, var(--background-color), rgb(32, 60, 73), var(--background-color));
+    margin-bottom: 2em;
+}
+
+
+.forecast-box h2{
+margin: 0 0 0.3em 0;
+padding: 0;
+color: rgb(206, 206, 104);
+}
+.forecast-box p{
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    }
+
+#forecast-div{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: space-between;
+grid-gap: 1em;
+padding: 0 1em 1em 1em;
+}
+#forecast-div div{
+background-color: rgba(255, 255, 255, 0.034);
+margin-top: 0.8em;
+padding: 0 0.6em 0.3em 0.6em;
+border-radius: 0.2em;
+}
+#forecast-container
+{
+background-color: #0b3d46;
+border-radius: 0.6em;
+max-width: 20em;
+margin: 0 auto;
 }
 
 /*----------- FOOTER --------------*/
