@@ -39,7 +39,9 @@
     <!-- HEADER HERE -->
     <header>
       <div class="header-content">
-        <img src="images/logo.webp" alt="Smith River Commerce Logo" />
+        <a href="index.html"
+          ><img src="images/logo.webp" alt="Smith River Commerce Logo"
+        /></a>
         <div>
           <h1>Smith River Commerce</h1>
           <h2>We are stronger together</h2>
@@ -142,34 +144,9 @@
               incident on the Nooksack River.
             </div>
           </section>
-          <section class="text-center spotlight">
-            <h3>
-              Big Raft Adventures
-              <span class="tiny-text">&copy;</span>
-            </h3>
-            <img src="images/kayaking.jpg" alt="kayaking advertisement" />
-            <div><em>"The ultimate river trip!"</em></div>
 
-            <hr />
-            <div class="spotinfo">
-              <div>contact@bigraft.com</div>
-              +1 (499) 499-4069 | <a href="#">Website</a>
-            </div>
-          </section>
-          <section class="text-center spotlight">
-            <h3>
-              Sequoia Lodge
-              <span class="tiny-text">&copy;</span>
-            </h3>
-            <img src="images/lodge.jpg" alt="lodge advertisement" />
-            <div><em>Feels like home.</em></div>
-
-            <hr />
-            <div class="spotinfo">
-              <div>info@sequoialodges.org</div>
-              +1 (112) 516-8040 | <a href="#">Website</a>
-            </div>
-          </section>
+          <section id="spotlight1" class="text-center spotlight"></section>
+          <section id="spotlight2" class="text-center spotlight"></section>
 
           <section class="join text-center">
             <div>
@@ -181,6 +158,11 @@
             </div>
           </section>
         </div>
+
+        <section id="spotlight3" class="text-center goldspotlight">
+          <h2>Weekly Gold Member Highlight</h2>
+          <hr />
+        </section>
       </div>
     </main>
 
@@ -209,6 +191,7 @@
         <span id="modified">last modified</span>
       </div>
       <script src="js/chamber-script.js"></script>
+      <script src="js/highlight-script.js"></script>
       <script type="module" src="js/weatherapi.js"></script>
     </footer>
   </body>

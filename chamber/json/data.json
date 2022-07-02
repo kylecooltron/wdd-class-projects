@@ -6,7 +6,8 @@
       "phone": "(320) 555-2017",
       "website": "acfisheries.com",
       "imageurl": "images/logo1AC.png",
-      "membership": "gold"
+      "membership": "gold",
+      "slogan": "Steelhead fishing at it's finest."
      },
      {
       "name": "Big Horn Lodge",
@@ -14,7 +15,8 @@
       "phone": "1 (800) 241-5622",
       "website": "garysmod.com",
       "imageurl": "images/logo2BL.png",
-      "membership": "bronze"
+      "membership": "silver",
+      "slogan": "Breakfast included."
      },
      {
       "name": "Lola's Barbeque",
@@ -22,7 +24,8 @@
       "phone": "(320) 211-5522",
       "website": "llbarbeque.com",
       "imageurl": "images/logo3LB.png",
-      "membership": "silver"
+      "membership": "silver",
+      "slogan": "Try our new Volcano Shrimp plate!"
      },
      {
       "name": "Riverside Market",
@@ -38,7 +41,8 @@
       "phone": "1 (800) 441-7512",
       "website": "westpointaquatics.org",
       "imageurl": "images/logo5WP.png",
-      "membership": "gold"
+      "membership": "gold",
+      "slogan": "New baby dolphins!"
      },
      {
       "name": "Big Raft Adventures",
@@ -46,7 +50,8 @@
       "phone": "1 (800) 241-5622",
       "website": "bigraft.com",
       "imageurl": "images/logo6BR.png",
-      "membership": "gold"
+      "membership": "gold",
+      "slogan": "The ultimate river trip!"
      },
      {
       "name": "Outdoor Escape Park",
@@ -54,7 +59,8 @@
       "phone": "1 (800) 241-5622",
       "website": "escapervpark.com",
       "imageurl": "images/logo7OO.png",
-      "membership": "bronze"
+      "membership": "gold",
+      "slogan": "Join our friendly community."
      },
      {
       "name": "Belle's Fine Cuisine",
@@ -62,7 +68,8 @@
       "phone": "1 (800) 241-5622",
       "website": "bellesrestaurant.com",
       "imageurl": "images/logo8BF.png",
-      "membership": "silver"
+      "membership": "silver",
+      "slogan": "Best food in town."
      },
      {
       "name": "Yugi Spa",

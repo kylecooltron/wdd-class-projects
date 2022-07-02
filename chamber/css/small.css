@@ -369,8 +369,26 @@ border: 0;
     height: 100%;
 }
 
+.goldspotlight img {
+    margin: 0.5em;
+padding: 0.1em;
+background: linear-gradient(rgb(243, 229, 102), rgba(126, 91, 17, 0.733));
+border-radius: 0.5em;
+}
+
+.goldspotlight h2 {
+    color: gold;
+}
+.goldspotlight h3 {
+    color: white;
+}
+
 .spotlight img {
-padding: 0.5em;
+    width: 40%;
+    margin: 0.5em;
+padding: 0.1em;
+background: linear-gradient(rgba(65, 145, 138, 0.301), rgba(10, 49, 78, 0.39));
+border-radius: 0.5em;
 }
 .spotlight h3 {
     margin: 0.3em;
@@ -379,6 +397,7 @@ padding: 0.5em;
 .spotinfo {
 font-size: 0.8em;
 margin: 0;
+padding: 0.5em;
 }
 .spotinfo div {
     padding-bottom: 0.4em;
@@ -509,7 +528,7 @@ a {
 .tiny-text{
     font-size: 0.4em;
     vertical-align: super;
-    margin-left: -7px;
+    margin-left: -5px;
 }
 
 

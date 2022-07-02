@@ -8,11 +8,11 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const businesses = jsonObject['businesses'];
-    businesses.forEach(displayProphets);
+    businesses.forEach(displayBusinesses);
   });
 
 
-  function displayProphets(business) {
+  function displayBusinesses(business) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let iconImg = document.createElement('img');
