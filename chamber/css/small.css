@@ -634,7 +634,7 @@ text-align: end;
 {
     width: 100%;
 }
-.contact-banner-container picture div
+.contact-banner-container div
 {
     position: absolute;
     top: 50%;
@@ -667,8 +667,11 @@ text-align: end;
     margin: 0;
     padding: 0;
 }
-.contact-info-card .contact-dd-center dd{
+.contact-info-card .contact-dd-center div{
+    margin: 0;
     margin-bottom: 0.3em;
+    padding: 0;
+    background: none;
 }
 .contact-info-card dl dt
 {
