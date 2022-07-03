@@ -78,5 +78,30 @@
       "website": "yugi.com",
       "imageurl": "images/logo9Y.png",
       "membership": "basic"
+     },
+     {
+      "name": "Peak Security",
+      "address": "105 S Woodland Dr",
+      "phone": "1 (800) 664-5311",
+      "website": "peaksecurity.com",
+      "imageurl": "images/logo10PS.png",
+      "membership": "bronze"
+     },
+     {
+      "name": "Fazt Delivery",
+      "address": "2024 Blank Circle",
+      "phone": "1 (949) 156-5696",
+      "website": "Fazt.diliveries.com",
+      "imageurl": "images/logo11FD.png",
+      "membership": "basic"
+     },
+     {
+      "name": "Lotus Club",
+      "address": "107 S Main St",
+      "phone": "Not Available",
+      "website": "LotusClub.org",
+      "imageurl": "images/logo12LC.png",
+      "membership": "gold",
+      "slogan": "Pai Sho is more than just a game."
      }]
   }

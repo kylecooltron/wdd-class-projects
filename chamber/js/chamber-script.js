@@ -48,11 +48,15 @@
 
   /* HEADER DATE */
 
-  const datefield = document.querySelector(".date");
   // derive the current date using a date object
   const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+
+  var datefields = document.querySelectorAll(".date");
+  for (var i = 0; i < datefields.length; i++) {
   //set dates text to full date
-  datefield.innerHTML = `<em>${fulldate}</em>`;
+  datefields[i].innerHTML = `<em>${fulldate}</em>`;
+  }
+
 
 
   /* FOOTER DATE and LAST MODIFIED */

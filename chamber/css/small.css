@@ -657,7 +657,14 @@ text-align: end;
     background: linear-gradient(rgb(231, 248, 231), rgb(164, 209, 218) 95%, rgb(54, 88, 94));
     color: rgb(0, 0, 0);
 }
-
+.contact-info-card .contact-dd-center{
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-info-card .contact-dd-center dd{
+    margin-bottom: 0.3em;
+}
 .contact-info-card dl dt
 {
 padding: 0.4em;
@@ -689,7 +696,13 @@ padding-right: 0.3em;
 
 .forecast-box{
     text-align: center;
+    background: none;
+    margin-bottom: 2em;
+}
+.forecast-box .forecast-title
+{
     background: linear-gradient(to right, var(--background-color), rgb(32, 60, 73), var(--background-color));
+    padding: 0.6em 0;
     margin-bottom: 2em;
 }
 
@@ -712,20 +725,24 @@ grid-gap: 1em;
 padding: 0 1em 1em 1em;
 }
 #forecast-div div{
-background-color: rgba(255, 255, 255, 0.034);
+background-color: rgba(255, 255, 255, 0.064);
 margin-top: 0.8em;
 padding: 0 0.6em 0.3em 0.6em;
 border-radius: 0.2em;
 }
 #forecast-container
 {
-background-color: #0b3d46;
 border-radius: 0.6em;
 max-width: 20em;
 margin: 0 auto;
 }
 
 /*----------- FOOTER --------------*/
+footer .date{
+margin-bottom: 0.5em;
+margin-top: 0;
+}
+
 footer {
     background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
   

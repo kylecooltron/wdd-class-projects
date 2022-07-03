@@ -58,7 +58,7 @@ fetch(requestURL)
     logoImg.setAttribute('loading', 'lazy');
 
     // Update textContent of slogan div
-    divSlogan.textContent = business.slogan;
+    divSlogan.textContent = `"${business.slogan}"`;
     divSlogan.style.fontStyle = "italic";
     divSlogan.style.color = "white";
  
