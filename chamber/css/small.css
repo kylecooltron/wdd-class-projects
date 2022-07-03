@@ -380,6 +380,11 @@ border: 0;
     height: 100%;
 }
 
+.goldspotlight{
+
+    background: linear-gradient(to right, var(--background-color), #112f3d, var(--background-color));
+    margin: 0 1.1em 1em 1.1em;
+}
 .goldspotlight img {
     margin: 0.5em;
 padding: 0.1em;
@@ -681,7 +686,7 @@ font-weight: normal;
 
 .outside-div
 {
-    background-color: #07242c;
+    background-color: #092c31;
     margin: 0.2em 2.5%;
     padding: 1.5em 2em;
     line-height: 1.5em;
