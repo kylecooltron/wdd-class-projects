@@ -708,6 +708,11 @@ padding-right: 0.3em;
     background: none;
     margin-bottom: 2em;
 }
+
+#forecast-p{
+    margin: 0;
+}
+
 .forecast-box .forecast-title
 {
     background: linear-gradient(to right, var(--background-color), rgb(32, 60, 73), var(--background-color));
