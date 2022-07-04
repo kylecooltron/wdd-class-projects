@@ -1,0 +1,781 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+    /* colors from my palette */
+
+    --primary-color: #93BF53;
+    --secondary-color: #387366;
+    --accent-color: #2D3E40;
+
+    --main-font-color: rgb(157, 221, 162);
+    --main-headings-color: rgb(161, 224, 89);
+    --background-color: #091c25;
+    --section-background-color: #69bef0;
+}
+
+
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 18px;
+    font-family: 'Quicksand', Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+/*----------- HEADER --------------*/
+
+.announcement-banner {
+min-height: 5em;
+background-color: #53bf73;
+color: black;
+text-align: center;
+display: none;
+align-items: center; /* Vertical center alignment */
+justify-content: center; /* Horizontal center alignment */
+font-size: 1.1em;
+}
+
+.weather-warning-banner {
+    padding-top: 0.3em;
+    min-height: 2em;
+    background-color: #eb5050;
+    color: black;
+    text-align: center;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    font-size: 2.1em;
+    }
+
+
+.header-content {
+    padding: .8rem 2%;
+  
+    background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.header-content div {
+    margin-left:10px;
+}
+
+.header-content h1 {margin: 0;}
+.header-content h2 {margin: 0; font-weight: normal; padding-top:5px;}
+
+
+.date {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 0.4em;
+    
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav div a {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+nav div {
+    background-color: var(--secondary-color);
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    height: 2.15rem;
+    display: flex;
+}
+
+nav div a img{
+margin-top: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    background-color: var(--secondary-color);
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover {
+    background-color: #7cccfa;
+    color: black;
+    font-weight: bold;
+}
+nav ul li.active a {
+    background-color: #4b6428;
+    color: #fff;
+    
+}
+
+/* Code for responsive hamburger menu ***************/
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+
+
+
+
+
+
+/*----------- MAIN --------------*/
+
+main {
+    min-height: 10rem;
+
+    color: var(--main-font-color);
+}
+
+main h1 {
+    font-size: 1.6em;
+    color: var(--main-headings-color);
+}
+main h2 {
+    color: #31c469;
+}
+
+
+main picture img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+}
+
+.content-container{
+    padding: 0 2%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2%;
+    grid-gap: 10px;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2%;
+    grid-gap: 0.5rem; 
+}
+.discover-grid figure {
+    background-color: #07242c;
+    padding: 1em;
+    margin: 0 0 3rem 0;
+    border-radius: 0.3em;
+}
+.discover-grid figcaption{
+    padding: 0.5em;
+    margin: 1em 0 0 0.5em;
+    font-style: italic;
+}
+.discover-grid img {
+    width: 95%;
+    transition: 0.2s;
+}
+.discover-grid img:hover {
+    box-shadow: 0 0 20px rgb(16, 111, 128);
+    outline: 1px solid rgb(9, 77, 67);
+}
+.discover-item {
+    background-color: #07242c;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+/* for lazy loading - blur images transition*/
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+
+.form-container{
+    margin: 2rem;
+}
+
+.benefits-table {
+    filter: drop-shadow(5px 5px 4px #1d476996);
+    margin: 2em; 
+    max-width: 20em;
+    display:none;
+}
+.benefits-table tr:nth-child(1){
+    color: gold;
+    font-size: 1.3em;
+}
+.benefits-table tr:nth-child(2) th{
+    color: white;
+}
+.benefits-table tr:nth-child(3) th{
+    color: brown;
+}
+.benefits-table tr:nth-child(4) th{
+    color: silver;
+}
+.benefits-table tr:nth-child(5) th{
+    color: gold;
+}
+  table, th, td{
+    border:1px solid rgb(185, 185, 185);
+    border-collapse: collapse;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+
+
+.form-container form {
+    border: 1px solid #31c469;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+form label {
+display: block;
+padding-top: 1rem;
+font-size: 1rem;
+color:rgb(194, 241, 175);
+}
+form label input {
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+form label textarea
+{
+    width: 100%;
+    margin-top: 0.5em;
+}
+form label input, form label select, form label textarea{
+    background-color: rgb(174, 222, 250);
+}
+form label input:required{
+    border-left: red solid 6px;
+}
+form label input:required:valid{
+    border-left: lime solid 6px;
+}
+form label select{
+    margin-left:1em;
+}
+.form-container form button {
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.last-visit {
+    text-align: center;
+    background-color: #7a8591;
+    color:black;
+    font-weight: bold;
+    font-size: 0.9em;
+
+    letter-spacing: 0.08em;
+    padding: 0.5em;
+}
+
+section {
+    background-color: #07242c;
+    margin: 0.2em;
+    padding: 0.5em;
+}
+
+.content section {
+    min-height: 12em;
+}
+
+section hr {
+    border: 1px solid rgba(151, 146, 146, 0.048);
+}
+
+.event-info {
+    font-size: 0.9em;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.hero-action {
+position:relative;
+overflow:hidden;
+padding: 0;
+border: 0;
+}
+
+.hero-action h2 {
+    position:absolute;
+    margin: 1.5rem;
+    color:#85e3ff;
+    text-shadow:  2px 2px #000000;
+}
+
+.hero-action button {
+    position:absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.hero-action img{
+    position:absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.goldspotlight{
+
+    background: linear-gradient(to right, var(--background-color), #112f3d, var(--background-color));
+    margin: 0 1.1em 1em 1.1em;
+}
+.goldspotlight img {
+    margin: 0.5em;
+padding: 0.1em;
+background: linear-gradient(rgb(243, 229, 102), rgba(126, 91, 17, 0.733));
+border-radius: 0.5em;
+}
+
+.goldspotlight h2 {
+    color: gold;
+}
+.goldspotlight h3 {
+    color: white;
+}
+
+.spotlight img {
+    width: 40%;
+    margin: 0.5em;
+padding: 0.1em;
+background: linear-gradient(rgba(65, 145, 138, 0.301), rgba(10, 49, 78, 0.39));
+border-radius: 0.5em;
+}
+.spotlight h3 {
+    margin: 0.3em;
+    color:rgb(6, 175, 253)
+}
+.spotinfo {
+font-size: 0.8em;
+margin: 0;
+padding: 0.5em;
+}
+.spotinfo div {
+    padding-bottom: 0.4em;
+    letter-spacing: 0.1em;
+    font-style:italic;
+}
+
+.content section:nth-child(7) { /*JOIN SECTION*/
+display: none;
+}
+
+button {
+    padding: 0.6rem;
+    border-radius: 16px;
+    background-color:#53bf73;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px, rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+}
+
+button:hover {
+    background-color:#8affad;
+    cursor: pointer;
+}
+
+.join {
+    text-align:center;
+    position: relative;
+    font-size: 1.1em;
+    color:rgb(85, 255, 107)
+}
+.join div{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.join b {
+    color:rgb(143, 248, 157)
+}
+.join button {
+    width:70%;
+    margin: 0 auto;
+}
+.join h4
+{
+    font-size: 1.1em;
+}
+
+
+.weather-temp
+{
+font-size: 1.3em;
+}
+
+.weather-box {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding: 0.6em;
+    margin: 0 auto;
+}
+
+.weather-box figure{
+margin: 0;
+color: rgb(83, 150, 238);
+}
+
+.weather-box figure img{
+    background: linear-gradient(rgb(65, 179, 255), rgb(211, 211, 81));
+    border-radius: 5px;
+    margin-top: 0.1em;
+}
+
+.weather-box figcaption{
+    font-size: 0.6em;
+}
+
+h4 {
+    font-size: 2em;
+    margin: 0.5em 0 0 0;
+}
+
+.weather-grid{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 1rem 2%;
+grid-gap: 5px;
+text-align: left;
+margin-left: 2em;
+}
+
+
+a {
+    color:#7dcfff;
+}
+.foot-logo-box a{
+    color:#073ccc;
+}
+.section-news
+{
+    text-align: left;
+    margin: 0 3em 1em 3em;
+    padding: 0.5em 1em;
+    background-color: #083035;
+    border-radius: 10px;
+    color:rgb(185, 218, 247);
+}
+.section-news h3{
+    text-align: center;
+    padding-left: 0;
+}
+.news-title
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color:rgb(214, 224, 224);
+}
+.news-date
+{
+    font-size: 0.7em;
+    margin: 0.9em 1em;
+}
+.text-center{
+    text-align:center;
+}
+.tiny-text{
+    font-size: 0.4em;
+    vertical-align: super;
+    margin-left: -5px;
+}
+
+
+/*directory page*/
+.dir-buttons{
+text-align: end;
+}
+#dir-panel{
+    background-image: url(../images/dirview_panel.png);
+    background-size: 73px 73px;
+    height: 75px;
+    width: 75px;
+}
+#dir-list{
+    background-image: url(../images/dirview_list.png);
+    background-size: 73px 73px;
+    height: 75px;
+    width: 75px;
+}
+.dir-buttons button{
+    background-color: rgba(60, 193, 255, 0.096);
+    margin: -2em 1em 2em 1em;
+}
+.dir-buttons button:focus{
+    background-color: rgb(60, 193, 255);
+}
+
+
+.directory-grid {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.directory-grid section {
+    padding: 2em;
+    margin: 0.4em 0.4em 2em 0.4em;
+    display: grid;
+
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+.directory-grid img {
+    display: none;
+}
+
+.directory-grid section a {
+    text-align: right;
+}
+
+
+/* panel view */
+.panelview {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.panelview section {
+    margin: 0.4em;
+    padding: 1em;
+    text-align: center;
+    
+    display: block;
+
+}
+
+.panelview img{
+    background-color: rgb(78, 134, 160);
+    padding: 1em;
+    display: block;
+    margin: auto;
+    width: 70%;
+    box-shadow:  5px 5px 10px #0000007c;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+/* contact page */
+
+.contact-banner-container
+{
+    position: relative;
+    text-align: center;
+}
+
+.contact-banner-container picture img
+{
+    width: 100%;
+}
+.contact-banner-container div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-banner-container picture div h1
+{
+    color:rgb(255, 255, 255);
+    font-size: 2em;
+}
+
+
+.contact-info-card
+{
+    max-width: 30rem;
+    margin: auto auto;
+}
+
+.contact-info-card div
+{
+    margin: 1.5em;
+    padding: 1em 2em 2em 2em;
+    border-radius: 5px;
+    background: linear-gradient(rgb(231, 248, 231), rgb(164, 209, 218) 95%, rgb(54, 88, 94));
+    color: rgb(0, 0, 0);
+}
+.contact-info-card .contact-dd-center{
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-info-card .contact-dd-center div{
+    margin: 0;
+    margin-bottom: 0.3em;
+    padding: 0;
+    background: none;
+}
+.contact-info-card dl dt
+{
+padding: 0.4em;
+font-weight: bold;
+}
+
+.contact-info-card dl dd
+{
+margin-bottom: 1em;
+margin-left: 0.4em;
+font-weight: normal;
+}
+
+
+.outside-div
+{
+    background-color: #092c31;
+    margin: 1em 2.5% 0.2em 2.5%;
+    padding: 1.5em 2em;
+    line-height: 1.5em;
+    font-size: large;
+    border-radius: 0.5em 0.5em 0 0;
+}
+.outside-div em
+{
+color: white;
+padding-right: 0.3em;
+}
+
+
+.forecast-box{
+    text-align: center;
+    background: none;
+    margin-bottom: 2em;
+}
+
+#forecast-p{
+    margin: 0;
+}
+
+.forecast-box .forecast-title
+{
+    background: linear-gradient(to right, var(--background-color), rgb(32, 60, 73), var(--background-color));
+    padding: 0.6em 0;
+    margin-bottom: 2em;
+}
+
+
+.forecast-box h2{
+margin: 0 0 0.3em 0;
+padding: 0;
+color: rgb(206, 206, 104);
+}
+.forecast-box p{
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    }
+
+#forecast-div{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: space-between;
+grid-gap: 1em;
+padding: 0 1em 1em 1em;
+}
+#forecast-div div{
+background-color: rgba(255, 255, 255, 0.064);
+margin-top: 0.8em;
+padding: 0 0.6em 0.3em 0.6em;
+border-radius: 0.2em;
+}
+#forecast-container
+{
+border-radius: 0.6em;
+max-width: 20em;
+margin: 0 auto;
+}
+
+/*----------- FOOTER --------------*/
+footer .date{
+margin-bottom: 0.5em;
+margin-top: 0;
+}
+
+footer {
+    background-image: linear-gradient(to right, #69bef0 , #9ddbff, #69bef0);
+  
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 1px solid rgba(41, 41, 41, 0.233);
+}
+
+.foot-logo-box {
+    display: block;
+    padding: 1.5em;
+
+}
+.foot-info-box {
+    padding: 1em;
+    background-color: var(--section-background-color);
+    padding-bottom: 1.6em;
+}

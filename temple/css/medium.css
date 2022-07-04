@@ -1,0 +1,81 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav ul {
+  width: 40%;
+}
+
+/*----------- MAIN --------------*/
+
+.content {
+  grid-template-columns: 1fr 1fr;
+}
+.content section:nth-child(1) {
+  grid-column: span 2;
+}
+
+.content section:nth-child(5), /*SPOTLIGHTS*/
+.content section:nth-child(6) {
+  grid-row: 3;
+}
+
+.content section:nth-child(7) {/*JOIN SECTION*/
+  display: block;
+  grid-row: 4;
+  grid-column: span 2;
+  }
+
+    /* NEWS RELEASE */
+    .content section:nth-child(4) {
+    grid-row: 2;
+    grid-column: span 2;
+    }
+
+    .discover-grid{
+      margin: 4rem;
+      grid-gap: 2rem; 
+    }
+
+    .directory-grid section {
+      grid-template-columns: 2fr;
+    }
+
+    .panelview {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlight img {
+    width: 60%;
+  }
+
+  #forecast-container
+{
+max-width: 28em;
+}
+
+#forecast-div{
+  grid-gap: 1em 4em;
+  padding: 0 3em;
+}
+
+/*----------- FOOTER --------------*/
+    
+.foot-logo-box{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+} /* end of media query */
