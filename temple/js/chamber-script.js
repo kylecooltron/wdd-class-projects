@@ -4,17 +4,6 @@
   /* REUSED VARIABLES*/
   const now = new Date();
 
-  /* ANNOUNCEMENT BANNER */
-
-  const announcementbanner = document.querySelector(".announcement-banner");
-  if( now.getDay() === 2 || now.getDay() === 3){
-    //if today is Monday or Tuesday, display the announcement banner
-    announcementbanner.style.display = "flex";
-  }else{
-    //otherwise do not display it
-    announcementbanner.style.display = "none";
-  }
-
     /* BAD WEATHER BANNER */
 
   // hide bad weather banner (default)

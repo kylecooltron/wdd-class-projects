@@ -7,47 +7,42 @@
       content="Temple Inn & Suites: Student project website WDD 230"
     />
     <meta name="author" content="Kyle Coulon" />
-
     <title>Temple Inn & Suites</title>
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet" />
-    <!-- phone-default -->
     <link href="css/small.css" rel="stylesheet" />
-    <!-- enhance-tablet -->
     <link href="css/medium.css" rel="stylesheet" />
-    <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet" />
+    <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
-  <body>
-    <!-- WEATHER WARNING BANNER HERE -->
-    <div class="weather-warning-banner">
-      ☁ Weather Alert! Severe Weather Warning
-    </div>
 
+  <body>
+    <!-- weather warning banner -->
+    <div class="weather-warning-banner">
+      ☁ Weather Alert! Severe Weather Warning.
+    </div>
     <!-- HEADER HERE -->
     <header>
       <div class="header-content">
-        <a href="index.html"
-          ><img src="images/logo.png" alt="Temple Inn & Suites Logo"
-        /></a>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Temple Inn & Suites Logo" />
+        </a>
         <div>
           <h1>Temple Inn & Suites</h1>
           <h2>Make your experience unforgettable</h2>
         </div>
-
         <div class="date">current date</div>
       </div>
     </header>
@@ -74,97 +69,92 @@
     <!-- CONTENT HERE -->
 
     <main>
-      <div class="content-container">
-        <h1>Home</h1>
-        <div class="outside-div">
-          <em> Our Purpose</em> <br />
-          We to give you the unforgettable experience you deserve. The
-          owner-operated company caters to temple workers, patrons, and their
-          families by providing specialized services and accommodations that
-          meet the needs of those patrons.
-        </div>
-        <div class="content">
-          <section class="hero-action">
-            <img
-              src="images/hero-image.jpg"
-              alt="image of Payson, Utah temple"
-            />
-            <h2>Welcome to Temple Inn & Suites</h2>
-            <form action="reservation.html">
-              <button type="submit">Make a Reservation</button>
+      <h1>Home</h1>
+      <div class="outside-div">
+        <em> Our Purpose</em> <br />
+        We to give you the unforgettable experience you deserve. The
+        owner-operated company caters to temple workers, patrons, and their
+        families by providing specialized services and accommodations that meet
+        the needs of those patrons.
+      </div>
+      <div class="content">
+        <section class="hero-action">
+          <img src="images/hero-image.jpg" alt="image of Payson, Utah temple" />
+          <h2>Welcome to Temple Inn & Suites</h2>
+          <form action="reservation.html">
+            <button type="submit">Make a Reservation</button>
+          </form>
+        </section>
+        <section class="text-center">
+          <h3>Main Office Contact</h3>
+          <hr />
+          <div class="text-center">
+            Bethesda, MD
+            <p class="event-info">
+              The Temple Inn & Suites is a hotel chain headquartered in
+              Bethesda, MD that builds and manages specialized hotel
+              accommodations near temple locations of The Church of Jesus Christ
+              of Latter-day Saints around the world.
+            </p>
+            <a href="#">more info ...</a>
+          </div>
+        </section>
+        <section class="text-center">
+          <h4>Weather</h4>
+          <div class="weather-box">
+            <figure>
+              <img src="images/partly-cloudy.png" alt="" id="weather-icon" />
+              <figcaption></figcaption>
+            </figure>
+            <em class="weather-temp">
+              <span id="current-temp">56</span>
+              <span class="tiny-text">&deg;F</span>
+            </em>
+          </div>
+          <hr />
+          <div class="weather-grid">
+            <div>Humidity:</div>
+            <div><span id="current-humidity"></span></div>
+            <div>Wind:</div>
+            <div><span id="current-wind"></span> mph</div>
+            <div>Windchill:</div>
+            <div>
+              <span id="windchill"></span>
+              <span id="windchill-unit">°F</span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="text-center">Oakland California Temple</h3>
+          <div class="section-news">
+            <div class="news-title">
+              Beautiful temple in Oakland, California, United States
+            </div>
+            <div class="news-date">Dedicated 17 November 1964</div>
+            Address 4770 Lincoln Ave Oakland CA 94602-2535 United States
+            Telephone (1) 510-531-3200
+          </div>
+        </section>
+
+        <section id="spotlight1" class="text-center spotlight">
+          <h2>Ammenities</h2>
+        </section>
+        <section id="spotlight2" class="text-center spotlight">
+          <h2>Other Temples</h2>
+          <div>
+            <form action="join.html">
+              <h4>
+                <button type="submit">see other temples</button>
+              </h4>
             </form>
-          </section>
-          <section class="text-center">
-            <h3>Main Office Contact</h3>
-            <hr />
-            <div class="text-center">
-              Bethesda, MD <span class="tiny-text">&copy;</span>
-              <p class="event-info">
-                The Temple Inn & Suites is a hotel chain headquartered in
-                Bethesda, MD that builds and manages specialized hotel
-                accommodations near temple locations of The Church of Jesus
-                Christ of Latter-day Saints around the world.
-              </p>
-              <a href="#">more info ...</a>
-            </div>
-          </section>
-          <section class="text-center">
-            <h4>Weather</h4>
-            <div class="weather-box">
-              <figure>
-                <img src="images/partly-cloudy.png" alt="" id="weather-icon" />
-                <figcaption></figcaption>
-              </figure>
-              <em class="weather-temp">
-                <span id="current-temp">56</span>
-                <span class="tiny-text">&deg;F</span>
-              </em>
-            </div>
-            <hr />
-            <div class="weather-grid">
-              <div>Humidity:</div>
-              <div><span id="current-humidity"></span></div>
-              <div>Wind:</div>
-              <div><span id="current-wind"></span> mph</div>
-              <div>Windchill:</div>
-              <div>
-                <span id="windchill"></span>
-                <span id="windchill-unit">°F</span>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="text-center">Oakland California Temple</h3>
-            <div class="section-news">
-              <div class="news-title">
-                Beautiful temple in Oakland, California, United States
-              </div>
-              <div class="news-date">Dedicated 17 November 1964</div>
-              Address 4770 Lincoln Ave Oakland CA 94602-2535 United States
-              Telephone (1) 510-531-3200
-            </div>
-          </section>
+          </div>
+        </section>
 
-          <section id="spotlight1" class="text-center spotlight">
-            <h2>Ammenities</h2>
-          </section>
-          <section id="spotlight2" class="text-center spotlight">
-            <h2>Other Temples</h2>
-            <div>
-              <form action="join.html">
-                <h4>
-                  <button type="submit">see other temples</button>
-                </h4>
-              </form>
-            </div>
-          </section>
-
-          <section class="join text-center">
-            <div>
-              <p>remove</p>
-            </div>
-          </section>
-        </div>
+        <section class="join text-center">
+          <div>
+            <p>remove</p>
+          </div>
+        </section>
       </div>
     </main>
 

@@ -1,5 +1,5 @@
 
-import update_windchil from './windchill.js';
+//import update_windchil from './windchill.js';
 
 // select HTML elements to edit
 const currentTemp = document.querySelector('#current-temp');
@@ -61,7 +61,7 @@ fetch(APIurl)
     // weather icon caption
     captionDesc.textContent = desc;
 
-    update_windchil();
+    //update_windchil();
 
   });
 
