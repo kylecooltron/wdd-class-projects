@@ -307,7 +307,7 @@ padding-top: 0.4em;
 
 .weather-box figure{
 margin: 0;
-color: rgb(83, 150, 238);
+color: rgb(142, 232, 255);
 }
 .weather-box figure img
 {
@@ -337,8 +337,8 @@ h4 {
     display:flex;
     flex-direction: row;
 width: 80%;
-margin: 0 auto;
-    grid-gap: 0 2em;
+margin: 0.5em auto 1em;
+    grid-gap: 0 4em;
     justify-content: center;
 }
 
@@ -347,7 +347,7 @@ margin: 0 auto;
     font-size: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0 0.5em;
+    grid-gap: 0 1.5em;
 
 }
 
@@ -445,8 +445,10 @@ border-radius: 0.5em;
 
     background: linear-gradient(to right, rgb(39, 33, 7), #1d4957, rgb(39, 33, 7));
     margin: 0 0 1em 0;
-    color: rgb(177, 154, 27);
+    color: rgb(255, 232, 100);
     text-align: center;
+    font-size: small;
+    letter-spacing: 0.1em;
 }
 
 
