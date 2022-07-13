@@ -136,15 +136,26 @@ main h1 {
   font-size: 1.6em;
 }
 
+
+
 .specialized
 {
-    margin-top: 3em;
+    position: relative;
+    margin-top: 1em;
+}
+.specialized div
+{
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .specialized ul
 {
-    width:90%;
-    font-size: small;
+    width:85%;
+    font-size: 0.6em;
     line-height: 1.5em;
 }
 
