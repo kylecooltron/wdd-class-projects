@@ -32,6 +32,7 @@
     <!-- weather warning banner -->
     <div class="weather-warning-banner">
       ☁ Weather Alert! Severe Weather Warning.
+      <button>X</button>
     </div>
     <!-- HEADER HERE -->
     <header>
@@ -71,91 +72,167 @@
     <main>
       <h1>Home</h1>
       <div class="outside-div">
-        <em> Our Purpose</em> <br />
-        We to give you the unforgettable experience you deserve. The
-        owner-operated company caters to temple workers, patrons, and their
-        families by providing specialized services and accommodations that meet
-        the needs of those patrons.
+        <em> Our Purpose...</em> <br />
+        is to create unforgettable experiences for our guests by providing
+        specialized services for people visiting the temple.
       </div>
       <div class="content">
         <section class="hero-action">
-          <img src="images/hero-image.jpg" alt="image of Payson, Utah temple" />
+          <img
+            src="images/temple-hero2.jpg"
+            alt="image of Payson, Utah temple"
+          />
           <h2>Welcome to Temple Inn & Suites</h2>
           <form action="reservation.html">
             <button type="submit">Make a Reservation</button>
           </form>
         </section>
-        <section class="text-center">
-          <h3>Main Office Contact</h3>
-          <hr />
-          <div class="text-center">
-            Bethesda, MD
-            <p class="event-info">
-              The Temple Inn & Suites is a hotel chain headquartered in
-              Bethesda, MD that builds and manages specialized hotel
-              accommodations near temple locations of The Church of Jesus Christ
-              of Latter-day Saints around the world.
-            </p>
-            <a href="#">more info ...</a>
-          </div>
-        </section>
-        <section class="text-center">
-          <h4>Weather</h4>
-          <div class="weather-box">
-            <figure>
-              <img src="images/partly-cloudy.png" alt="" id="weather-icon" />
-              <figcaption></figcaption>
-            </figure>
-            <em class="weather-temp">
-              <span id="current-temp">56</span>
-              <span class="tiny-text">&deg;F</span>
-            </em>
-          </div>
-          <hr />
-          <div class="weather-grid">
-            <div>Humidity:</div>
-            <div><span id="current-humidity"></span></div>
-            <div>Wind:</div>
-            <div><span id="current-wind"></span> mph</div>
-            <div>Windchill:</div>
-            <div>
-              <span id="windchill"></span>
-              <span id="windchill-unit">°F</span>
+        <section class="alignmiddle text-center">
+          <div>
+            <h2 class="lessmargin">About Us</h2>
+
+            <div class="text-center p-space">
+              <p class="event-info">
+                Since 2022, we've been making it easy and comfortable for
+                members and friends of
+              </p>
+              <a id="churchtitle" href="churchofjesuschrist.org">
+                The Church of Jesus Christ <br />
+                of Latter-day Saints
+              </a>
+              <p class="event-info">
+                to visit and work at temples near our convenient hotels.
+              </p>
+              <br />
+              <a href="#"> <small>more info ...</small> </a>
             </div>
           </div>
         </section>
-        <section>
-          <h3 class="text-center">Oakland California Temple</h3>
-          <div class="section-news">
+        <section class="specialbox text-center">
+          <figure>
+            <img src="images/templewedding.jpg" alt="Temple Wedding Picture" />
+            <figcaption>Temple Weddings</figcaption>
+          </figure>
+          <p>
+            Our wedding reception hall can be easily customized with a simple
+            catering menu and kitchen access for food preparation and serving.
+          </p>
+        </section>
+
+        <section class="section-news-container text-center">
+          <div class="divchild temple-highlight-title">
+            <h2>Temple Highlight</h2>
+          </div>
+          <div class="divchild"></div>
+          <div class="divchild">
+            <figure id="oakland-temple-fig">
+              <img
+                src="images/oakland-temple.jpg"
+                alt="Oakland California Temple"
+              />
+              <figcaption>Oakland California Temple</figcaption>
+            </figure>
+          </div>
+          <div class="divchild specialized">
+            <h3>Our Hotel Provides</h3>
+            <ul class="text-left">
+              <li>Changing Rooms for Patrons</li>
+              <li>Low-cost babysitting</li>
+              <li>Long-term accommodations</li>
+              <li>Family Search Center</li>
+              <li>Wedding reception venue</li>
+              <li>Kitchen service</li>
+            </ul>
+          </div>
+          <div class="divchild">
+            <h3 id="weather-title">Current Weather</h3>
+            <small id="weather-title-small">Oakland, CA</small>
+            <hr />
+            <div class="weather-container-grid">
+              <div class="weather-box">
+                <figure>
+                  <img
+                    src="images/partly-cloudy.png"
+                    alt=""
+                    id="weather-icon"
+                  />
+                  <figcaption id="weather-caption"></figcaption>
+                </figure>
+                <em class="weather-temp">
+                  <span id="current-temp">56</span>
+                  <span class="tiny-text">&deg;F</span>
+                </em>
+              </div>
+
+              <div class="weather-grid">
+                <div class="weather-grid-flex">
+                  <div>Humidity:</div>
+                  <div><span id="current-humidity"></span></div>
+                </div>
+                <div class="weather-grid-flex">
+                  <div>Wind:</div>
+                  <div id="current-wind"></div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+
+          <div class="divchild forecast-box">
+            <div class="forecast-title">
+              <p id="forecast-p">4-day weather forecast</p>
+            </div>
+
+            <div id="forecast-container">
+              <div id="forecast-div"></div>
+            </div>
+          </div>
+
+          <div class="divchild section-news">
             <div class="news-title">
-              Beautiful temple in Oakland, California, United States
+              Beautiful temple in Oakland, California
             </div>
             <div class="news-date">Dedicated 17 November 1964</div>
-            Address 4770 Lincoln Ave Oakland CA 94602-2535 United States
-            Telephone (1) 510-531-3200
+            <div class="temple-info-flex">
+              <div>
+                Address: 4770 Lincoln Ave Oakland CA 94602 United States
+              </div>
+              <div>Telephone: 510-531-3200</div>
+            </div>
           </div>
         </section>
 
-        <section id="spotlight1" class="text-center spotlight">
-          <h2>Ammenities</h2>
+        <section class="spotlight">
+          <h2 class="text-center">Free Ammenities</h2>
+
+          <ul>
+            <li>Breakfast</li>
+            <li>Exercise room</li>
+            <li>Outdoor pool</li>
+            <li>WiFi high-speed</li>
+            <li>Smart TVs</li>
+            <li>Temple shuttle</li>
+          </ul>
         </section>
-        <section id="spotlight2" class="text-center spotlight">
+        <section class="text-center spotlight">
+          <figure>
+            <img
+              src="images/albuquerque_new_mexico_temple.jpeg"
+              alt="Albuquerque New Mexico temple"
+            />
+          </figure>
           <h2>Other Temples</h2>
-          <div>
-            <form action="join.html">
-              <h4>
-                <button type="submit">see other temples</button>
-              </h4>
-            </form>
-          </div>
-        </section>
-
-        <section class="join text-center">
-          <div>
-            <p>remove</p>
-          </div>
+          <form action="join.html">
+            <button type="submit">See Locations</button>
+          </form>
         </section>
       </div>
+
+      <section class="goldspotlight">
+        Special thanks to OpenWeather for realtime weather information. <br />
+        For more information visit:
+        <a href="https://openweathermap.org/">openweathermap.org</a>
+      </section>
     </main>
 
     <!-- FOOTER HERE -->
@@ -163,16 +240,15 @@
       <div class="foot-logo-box">
         <div>
           <img src="images/logo.png" alt="Temple Inn & Suites Logo" />
-          <h3>Temple Inn & Suites</h3>
           <p>Headquaters: Bethesda, MD</p>
         </div>
         <div>
           <em>info@templeinn.com</em>
           <p>+1 356-226-2222</p>
           <div>
-            <a href="https://goo.gl/maps/esHPXXnmS3KrPQtz6"
-              >📍 Location on Map</a
-            >
+            <a href="https://goo.gl/maps/esHPXXnmS3KrPQtz6">
+              📍 Location on Map
+            </a>
           </div>
         </div>
       </div>
@@ -184,7 +260,8 @@
         <span id="modified">last modified</span>
       </div>
       <script src="js/chamber-script.js"></script>
-      <script type="module" src="js/weatherapi.js"></script>
+      <script src="js/weatherapi.js"></script>
+      <script src="js/forecastapi.js"></script>
     </footer>
   </body>
 </html>

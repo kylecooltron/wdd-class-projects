@@ -69,6 +69,122 @@ max-width: 28em;
   padding: 0 3em;
 }
 
+
+
+.hero-action img{
+  object-position: 50% 0%;
+}
+
+
+.spotlight ul
+{
+    width: 70%;
+}
+
+
+.section-news-container
+{
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-news-container .divchild:nth-child(1)
+{
+grid-column: 1/4;
+}
+
+
+.section-news-container .divchild:nth-child(3)
+{
+grid-column: 1/3;
+grid-row: 2/3;
+}
+
+.section-news-container .divchild:nth-child(4)
+{
+grid-column: 3/4;
+grid-row: 2/3;
+}
+.section-news-container .divchild:nth-child(5)
+{
+grid-column: 1/4;
+grid-row: 3/4;
+}
+.section-news-container .divchild:nth-child(6)
+{
+grid-column: 1/4;
+grid-row: 4/5;
+}
+.section-news-container .divchild:nth-child(7)
+{
+grid-column: 1/4;
+grid-row: 5/6;
+}
+
+
+main h1 {
+
+  margin: 1em 1.5em;
+  text-align: left;
+}
+
+.section-news
+{
+    margin: 2.5em 1.5em 1em;
+}
+
+.hero-action h2 {
+  font-size: 1.6em;
+}
+
+.specialized
+{
+    margin-top: 3em;
+}
+
+.specialized ul
+{
+    width:90%;
+    font-size: small;
+    line-height: 1.5em;
+}
+
+.specialbox p
+{
+font-size: medium;
+color: white;
+
+}
+.specialbox figcaption
+{
+
+    width: 90%;
+  
+}
+
+
+
+.date {
+  margin: 1rem 0 0.5rem 0;
+}
+
+
+button {
+  background-color:#0c2920c5;
+}
+
+.hero-action button {
+  transform: translate(-50%, 2.5em);
+}
+
+.p-space
+{
+    margin: 4.5vw 0;
+}
+
+.event-info {
+  width: 75%;
+}
+
 /*----------- FOOTER --------------*/
     
 .foot-logo-box{
