@@ -443,7 +443,7 @@ border-radius: 0.5em;
 
 .goldspotlight{
 
-    background: linear-gradient(to right, rgb(39, 33, 7), #1d4957, rgb(39, 33, 7));
+    background: linear-gradient(to right, rgba(39, 33, 7,0), rgb(39, 33, 7), #51585a, rgb(39, 33, 7), rgba(39, 33, 7, 0));
     margin: 0 0 1em 0;
     color: rgb(255, 232, 100);
     text-align: center;
@@ -581,6 +581,8 @@ object-fit: cover;
 {
     list-style-image: url(../images/bulletspike.png); 
 }
+
+
 
 
 .specialized ul

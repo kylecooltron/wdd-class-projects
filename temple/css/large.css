@@ -157,11 +157,19 @@ grid-auto-flow: column;
 
 
 
-
+  .specialized div
+  {
+      position: absolute;
+      margin-top: 50%;
+      margin-left: 50%;
+      margin-right: -50%;
+      transform: translate(-70%, -70%);
+  }
+  
   .specialized
   {
-      margin-top: 8em;
-      justify-self: left;
+  
+      margin-top: 0;
   }
 
   .specialized ul
