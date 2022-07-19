@@ -179,7 +179,7 @@ color: white;
 }
 
 
-button {
+.homepage button {
   background-color:#0c2920c5;
 }
 
@@ -195,6 +195,134 @@ button {
 .event-info {
   width: 75%;
 }
+
+
+
+.cards section
+{
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.5em;
+}
+
+.cards section p
+{
+  margin: 0;
+}
+
+.cards section h2{
+  grid-column: 1/3;
+}
+
+/* address */
+.cards section p:nth-child(2)
+{
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.cards section p:nth-child(3)
+{
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+}
+
+/* email */
+.cards section p:nth-child(4) 
+{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+/* services */
+.cards section div:nth-child(5) 
+{
+/* grid-row: 4/5;
+grid-column: 1/2; */
+grid-row: 4/5;
+grid-column: 2/3;
+align-self: center;
+}
+
+/* history */
+.cards section div:nth-child(6) 
+{
+grid-column: 1/2;
+grid-row: 5/6;
+}
+
+ /* ordinance schedule */
+.cards section p:nth-child(7)
+{
+grid-column: 1/3;
+grid-row: 6/7;
+align-self: center;
+margin-top: 3em;
+margin-bottom: 1em;
+}
+/* session schedule */
+.cards section p:nth-child(8)
+{
+grid-column: 1/3;
+grid-row: 7/8;
+margin-bottom: 3em;
+}
+
+/* closures */
+.cards section div:nth-child(9)
+{
+/* grid-column: 2/3;
+grid-row: 5/7; */
+grid-row: 4/5;
+grid-column: 1/2;
+}
+
+.cards section div:nth-child(10) 
+{
+grid-column: 2/3;
+grid-row: 5/6
+}
+
+
+
+.form-page
+{
+    position: relative;
+    min-height: 40em;
+}
+
+
+.form-page img
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 35em;
+    object-fit: cover;
+}
+
+.form-container
+{
+  position: absolute;
+  margin-left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.form-container form
+{
+  box-shadow: 5px 5px 25px black;
+}
+
+
+.cards section
+{
+    background-image: linear-gradient( #e9c93b , #ccab51 47%, rgb(212, 188, 80) 48%, rgb(209, 158, 47) 55%, #c99e40 99%, #0a2442);
+}
+
+
 
 /*----------- FOOTER --------------*/
     

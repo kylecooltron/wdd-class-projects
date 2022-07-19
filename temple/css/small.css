@@ -275,13 +275,7 @@ border: 0;
     object-position: 50% 95%;
 }
 
-
-
-.content section:nth-child(7) { /*JOIN SECTION*/
-display: none;
-}
-
-button {
+.homepage button {
     padding: 0.8rem;
     border-radius: 0px;
     border: 0;
@@ -291,11 +285,22 @@ button {
     /* box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px, rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset; */
 }
 
-button:hover {
+.homepage button:hover {
     background-color:#0278c7;
     cursor: pointer;
     color: white;
 }
+
+
+
+
+
+
+.content section:nth-child(7) { /*JOIN SECTION*/
+display: none;
+}
+
+
 
 .weather-temp
 {
@@ -697,6 +702,262 @@ max-width: 200px;
 }
 
 
+
+
+.cards 
+{
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    background-color: #0d3658;
+}
+.cards section p
+{
+    font-size: small;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+.cards section ul
+{
+    padding: 0 1em;
+    list-style-type:none;
+}
+
+.cards section div:nth-child(9) ul
+{
+font-size: small;
+}
+
+.cards section ul li
+{
+    padding: 0.3em;
+}
+
+.cards section dl
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: small;
+}
+
+.cards section dl  dt:nth-child(1),
+.cards section dd:nth-child(2)
+{
+    grid-column: 1/2;
+}
+
+.cards section dl  dt:nth-child(5),
+.cards section dd:nth-child(6)
+{
+    grid-column: 1/3;
+}
+
+/* groundbreaking */
+.cards section dl  dt:nth-child(3)
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.cards section dl  dd:nth-child(4)
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* dedicated */
+.cards section dl  dt:nth-child(7),
+.cards section dl  dd:nth-child(8)
+{
+    grid-column: 1/3;
+    padding: 0.25em 2em;
+}
+
+
+.cards section dt 
+{
+    font-weight: bold;
+}
+
+.cards section dd {
+    padding: 0.5em;
+    margin: 0 0 1em 0;
+}
+
+
+.cards section
+{
+    text-align: center;
+    background-image: linear-gradient( #e9c93b ,  #9c601c 99%, #0a2442);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.cards section img
+{
+    width: 100%;
+    border-radius: 0.4em;
+    box-shadow: 1px 2px 10px black;
+}
+  
+.cards section h3
+{
+    font-size: 1.2rem;
+    color: rgb(66, 50, 19);
+}
+.cards section h2
+{
+font-size: 2.2em;
+color:rgb(122, 77, 17);
+padding: 0.5em 0;
+text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+width: 100%;
+background: linear-gradient(to right, rgba(0,0,0,0), rgb(255, 232, 129), rgba(0,0,0,0) )
+}
+
+.cards section b
+{
+    color:rgb(61, 16, 10);
+}
+
+.cards div
+{
+    border-radius: 0.4em;
+    margin: 1em 1em;
+    padding: 0.5em 0em 1em;
+}
+
+.cards button
+{
+    display: block;
+    font-size: small;
+    margin: 0.4em auto;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(154, 172, 187);
+    border-radius: 1em;
+}
+
+.cards button:hover
+{
+background-color: #58c0fc;
+}
+
+.cards section div:nth-child(9) h3
+{
+    color: rgb(158, 16, 16);
+    font-size: larger;
+}
+
+.cards section div:nth-child(6)
+{
+align-self: center;
+}
+
+.cards section div:nth-child(5) h3
+{
+color: rgb(12, 89, 119);
+font-size: larger;
+
+}
+
+.cards section div:nth-child(10)
+{
+background-color: rgba(230, 72, 72, 0);
+}
+
+
+
+.form-page img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.form-page form h2
+{
+    text-align: center;
+}
+
+.form-page form
+{
+    margin: 2em 1em;
+    padding: 1em;
+    background: linear-gradient(rgb(60, 112, 180), rgb(20, 67, 128));
+    border-radius: 1em;
+    font-size: small;
+    max-width: 25rem;
+    margin: 0 auto 0;
+}
+
+form label 
+{
+    padding-top: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+
+form label input 
+{
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+form label input, form label select, form label textarea{
+    background-color: rgb(221, 239, 252);
+}
+form label input:required{
+    border-left: red solid 6px;
+}
+form label input:required:valid{
+    border-left: lime solid 6px;
+}
+
+.form-container
+{
+    margin: 3em 1em;
+}
+
+form label select
+{
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#location
+{
+    margin-left:2.1em;
+    width: 71%;
+}
+
+.form-container form button {
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.outside-div em
+{
+    white-space: nowrap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+form label textarea
+{
+    width: 100%;
+    margin-top: 0.5em;
+    border-radius: 4px;
+}
 
 /*----------- FOOTER --------------*/
 

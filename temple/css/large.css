@@ -179,7 +179,7 @@ grid-auto-flow: column;
   }
 
 
-button {
+.homepage button {
     background-color:#0e2b42ad;
 }
 .hero-action button {
@@ -195,6 +195,161 @@ button {
 .event-info {
   width: 70%;
 }
+
+
+
+
+
+
+.cards section
+{
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-image: linear-gradient( #e9c93b , #ccab51 43%, rgb(199, 161, 57) 45%, rgb(168, 141, 50) 55%, #9c601c 99%, #0a2442);
+    border-radius: 2em;
+}
+.cards div
+{
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.cards section h2{
+  grid-column: 1/4;
+}
+
+/* address */
+.cards section p:nth-child(2)
+{
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.cards section p:nth-child(3)
+{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* email */
+.cards section p:nth-child(4) 
+{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/* services */
+.cards section div:nth-child(5) 
+{
+grid-row: 3/5;
+grid-column: 2/3;
+align-self: center;
+}
+
+/* history */
+.cards section div:nth-child(6) 
+{
+grid-column: 1/2;
+grid-row: 5/6;
+align-self: flex-start;
+margin-top: 3em;
+}
+
+
+/* ordinance schedule */
+.cards section p:nth-child(7)
+{
+grid-column: 3/4;
+grid-row: 3/4;
+align-self: center;
+margin-top: 3em;
+margin-bottom: 1em;
+}
+
+/* session schedule */
+.cards section p:nth-child(8)
+{
+grid-column: 3/4;
+grid-row: 4/5;
+margin-bottom: 0.5em;
+}
+
+
+
+/* closures */
+.cards section div:nth-child(9)
+{
+grid-row: 3/5;
+grid-column: 1/2;
+}
+
+.cards section div:nth-child(10) 
+{
+grid-column: 2/4;
+grid-row: 5/6;
+margin-top: 1em;
+width: 80%;
+justify-self: flex-end;
+margin-bottom: 2em;
+margin-right: 4em;
+}
+
+
+
+
+.form-page
+{
+    display: flex;
+    flex-direction: row;
+    min-height: auto;
+}
+
+.form-page img
+{
+  position: relative;
+  width:50%;
+  margin: 1em 0 3em;
+}
+
+.form-container
+{
+  position: relative;
+  width: 50%;
+  margin: 1em 0 3em;
+  padding: 3em 0;
+  transform: translateX(0);
+  background-color:rgb(27, 25, 19);
+;  display: block;
+  text-align: center;
+}
+
+.form-container div
+{
+  display: block;
+  text-align: center;
+}
+
+
+.form-page form h2
+{
+    color: rgb(66, 24, 24);
+}
+
+
+.form-container form
+{
+  display: inline-block;
+  text-align: left;
+  margin: auto auto;
+
+  background: linear-gradient( rgb(230, 203, 52) 5%, rgb(206, 125, 32) 95%);
+   
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+
+
 
 
 /*----------- FOOTER --------------*/
