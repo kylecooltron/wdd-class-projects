@@ -1344,6 +1344,12 @@ margin: 2em 0;
     list-style: none;
 }
 
+
+fieldset
+{
+    border: none;
+}
+
 /*----------- FOOTER --------------*/
 
 
