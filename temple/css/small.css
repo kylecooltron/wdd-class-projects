@@ -392,6 +392,7 @@ display: grid;
 grid-template-columns: 1fr;
 padding: 0;
 grid-gap: 1em 0;
+background-color: #0a3258;
 }
 
 #oakland-temple-fig
@@ -422,7 +423,7 @@ border-radius: 0.5em;
     text-align: left;
     padding: 0.5em 0.5em 1.2em;
     margin: 0.9em;
-    background-color: #07314d;
+    background-color: #0c4266;
     border-radius: 10px;
     color:rgb(185, 218, 247);
 }
@@ -891,7 +892,7 @@ background-color: rgba(230, 72, 72, 0);
 {
     margin: 2em 1em;
     padding: 1em;
-    background: linear-gradient(rgb(60, 112, 180), rgb(20, 67, 128));
+    background: linear-gradient(rgb(50, 124, 219), rgb(24, 79, 150));
     border-radius: 1em;
     font-size: small;
     max-width: 25rem;
@@ -913,6 +914,7 @@ form label input
     border-radius: 4px;
     margin-top: 4px;
 }
+
 
 form label input, form label select, form label textarea{
     background-color: rgb(221, 239, 252);
@@ -939,6 +941,16 @@ form label select
     margin-left:2.1em;
     width: 71%;
 }
+#nights
+{
+    margin-left:1.5em;
+    width: 61%;  
+}
+#rooms
+{
+    margin-left:3em;
+    width: 71%; 
+}
 
 .form-container form button {
     margin-top: 1rem;
@@ -955,7 +967,7 @@ form label select
     transform: translate(-50%, 0);
 }
 
-.outside-div em
+.outside-div em, .terms-box em
 {
     white-space: nowrap;
     font-weight: normal;
@@ -1195,7 +1207,7 @@ padding: 1em 2em;
 .convenience-pane img
 {
 max-width: 400px;
-box-shadow: 2px 2px 10px rgb(0, 3, 5);
+border: 10px solid rgb(19, 64, 100);
 }
 
 .convenience-pane figure
@@ -1209,6 +1221,8 @@ font-size: small;
 margin: 0.5em 3em;
 color: rgb(199, 198, 198);
 }
+
+
 
 #contact-form-title
 {
@@ -1238,9 +1252,88 @@ border:15px solid rgb(0, 67, 112);
 }
 
 
+.terms-box
+{
+    font-size: small;
+    margin: 0.5em;
+    color:rgb(85, 168, 223);
+}
+.terms-box a
+{
+color: white;
+}
+.terms-box a:hover
+{
+color: rgb(0, 153, 255);
+}
 
 
 
+.weather-warning-banner button
+{
+font-size: small;
+margin: 0 2em;
+float: right;
+cursor: pointer;
+}
+.weather-warning-banner button:hover
+{
+background-color: #0075b9;
+}
+
+
+.services-darker a
+{
+    text-decoration: none;
+    color: white;
+}
+.services-darker a:hover
+{
+    color:rgb(185, 247, 255)
+}
+
+
+.radio-roomtype
+{
+    display: block;
+    text-align: center;
+    margin: 0.4em 0;
+}
+.radio-roomtype input, .radio-roomtype label
+{
+margin: 0;
+padding: 0;
+display: inline-block
+}
+
+
+.reception-food-stack .catering-menu
+{
+    text-align: center;
+    color: black;
+    margin: 0em 1em 3em;
+    padding: 0em 2em 2em 2em;
+}
+
+#cateringtitle
+{
+background-color: rgba(128, 128, 128, 0.452);
+margin: 0 3em;
+}
+.catering-menu ul h3
+{
+color: rgb(117, 62, 10);
+}
+.catering-menu ul
+{
+padding: 0;
+margin: 2em 0;
+}
+.catering-menu ul li
+{
+    font-size: medium;
+    list-style: none;
+}
 
 /*----------- FOOTER --------------*/
 

@@ -40,8 +40,8 @@
                     "Dedicated": "5 March 2000",
                     "Fact": "The Albuquerque New Mexico Temple was the first temple built in the state of New Mexico."
                   },
-      "ordinance": "what?",
-      "session": "whaaat?",
+      "ordinance": "Mon-Fri </br> 8am-9pm MDT",
+      "session": "10am 11am, 12pm, 3pm, 4pm, 5pm",
       "closures": ["Monday, 3 October 2022 - Monday, 17 October 2022",
                   "Wednesday, 23 November 2022 (Limited Operations)",
                   "Thursday, 24 November 2022",
@@ -50,52 +50,53 @@
       "imageurl": "images/albuquerque_new_mexico_temple.jpeg"
      },
      {
-      "name": "Albuquerque New Mexico Temple",
-      "address": "10301 San Francisco Rd NE Albuquerque NM 87122 <br> United States",
-      "phone": "(1) 505-822-5110",
-      "email": "oakland@ldstemples.org",
+      "name": "Seattle Washington Temple",
+      "address": "2808 148th Ave SE Bellevue WA 98007 <br> United States",
+      "phone": "(1) 425-643-5144",
+      "email": "seattle@ldstemples.org",
       "services" : ["Clothing rental available",
                     "No cafeteria available",
                     "No patron housing available",
                     "Distribution center nearby"],
       "history": {
-                    "Announced": "4 April 1997",
-                    "Groundbreaking": "20 June 1998",
-                    "Dedicated": "5 March 2000",
-                    "Fact": "The Albuquerque New Mexico Temple was the first temple built in the state of New Mexico."
+                    "Announced": "15 November 1975",
+                    "Groundbreaking": "27 May 1978",
+                    "Dedicated": "17 November 1980",
+                    "Fact": "The Seattle Washington Temple is one of only five temples featuring an angel Moroni statue holding the gold plates."
                   },
-      "ordinance": "what?",
-      "session": "whaaat?",
-      "closures": ["Monday, 3 October 2022 - Monday, 17 October 2022",
-                  "Wednesday, 23 November 2022 (Limited Operations)",
-                  "Thursday, 24 November 2022",
-                  "Saturday, 24 December 2022",
-                  "Saturday, 31 December 2022 (Limited Operations)"],
-      "imageurl": "images/albuquerque_new_mexico_temple.jpeg"
+      "ordinance": "Mon-Fri </br> 8am-9pm PT",
+      "session": "9am, 10pm, 11am, 2pm, 3pm, 4pm",
+      "closures": ["Monday, 8 August 2022 - Monday, 22 August 2022",
+                  "Saturday, 1 October 2022",
+                  "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                  "Saturday, 24 December 2022 - Sunday, 25 December 2022",
+                  "Saturday, 31 December 2022 - Sunday, 1 January 2023"],
+      "imageurl": "images/seattle_washington_temple.jpeg"
      },
      {
-      "name": "Albuquerque New Mexico Temple",
-      "address": "10301 San Francisco Rd NE Albuquerque NM 87122 <br> United States",
-      "phone": "(1) 505-822-5110",
-      "email": "oakland@ldstemples.org",
+      "name": "Los Angeles California Temple",
+      "address": "10777 Santa Monica Blvd Los Angeles CA 90025 <br> United States",
+      "phone": "(1) 310-474-5569",
+      "email": "losangeles@ldstemples.org",
       "services" : ["Clothing rental available",
                     "No cafeteria available",
-                    "No patron housing available",
+                    "Patron housing available",
                     "Distribution center nearby"],
       "history": {
-                    "Announced": "4 April 1997",
-                    "Groundbreaking": "20 June 1998",
-                    "Dedicated": "5 March 2000",
-                    "Fact": "The Albuquerque New Mexico Temple was the first temple built in the state of New Mexico."
+                    "Announced": "6 March 1937",
+                    "Groundbreaking": "22 September 1951",
+                    "Dedicated": "11 March 1956",
+                    "Fact": "At more than 190,000 square feet, it was the Church's largest temple ever built."
                   },
-      "ordinance": "what?",
-      "session": "whaaat?",
-      "closures": ["Monday, 3 October 2022 - Monday, 17 October 2022",
-                  "Wednesday, 23 November 2022 (Limited Operations)",
-                  "Thursday, 24 November 2022",
-                  "Saturday, 24 December 2022",
-                  "Saturday, 31 December 2022 (Limited Operations)"],
-      "imageurl": "images/albuquerque_new_mexico_temple.jpeg"
+      "ordinance": "Mon-Fri </br> 8am-9pm PT",
+      "session": "10am, 11am, 12pm, 1pm",
+      "closures": ["Monday, 11 July 2022 - Monday, 1 August 2022",
+                    "Saturday, 1 October 2022",
+                    "Tuesday, 22 November 2022 - Thursday, 24 November 2022",
+                    "Saturday, 24 December 2022",
+                    "Saturday, 31 December 2022"
+                  ],
+      "imageurl": "images/los_angeles_temple.jpeg"
      }
 
     ]

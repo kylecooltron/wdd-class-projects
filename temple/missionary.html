@@ -32,7 +32,7 @@
     <!-- weather warning banner -->
     <div class="weather-warning-banner">
       ☁ Weather Alert! Severe Weather Warning.
-      <button>X</button>
+      <button onclick="closeWeatherAlert()">X</button>
     </div>
     <!-- HEADER HERE -->
     <header>
@@ -51,10 +51,10 @@
     <!-- NAVIGATION HERE -->
     <nav>
       <div>
-        <a href="https://www.facebook.com/ChurchofJesusChrist"
+        <a href="https://www.facebook.com/ChurchofJesusChrist" target="_blank"
           ><img src="images/facebook.png" alt="facebook social media link"
         /></a>
-        <a href="https://www.youtube.com/user/kylecoulon"
+        <a href="https://www.youtube.com/user/kylecoulon" target="_blank"
           ><img src="images/youtube.png" alt="youtube social media link"
         /></a>
       </div>
@@ -93,15 +93,12 @@
         </div>
         <h2>Long Term Stay Accommodations</h2>
         <p>
-          Our Kitchenette Suites provide quick access to an exercise room, changing rooms and
-          Temple Shuttles, making these suites one of the best options for
-          Full-time Temple Missionaries.
+          Our Kitchenette Suites provide quick access to an exercise room,
+          changing rooms and Temple Shuttles, making these suites one of the
+          best options for Full-time Temple Missionaries.
         </p>
         <div>
-          <img
-            src="images/fitness_5.jpg"
-            alt="child eating food at wedding"
-          />
+          <img src="images/fitness_5.jpg" alt="child eating food at wedding" />
         </div>
       </div>
 
@@ -129,68 +126,66 @@
       </div>
 
       <div class="services text-center">
-        <h2 class="text-center">Made for Convenience.</h2>
-   
-        <div class="convenience-pane">
+        <h2 class="text-center">Made for You.</h2>
 
+        <div class="convenience-pane">
           <div>
             <figure>
               <img
-              src="images/templeshuttle.jpg"
-              alt="shuttle taking people to temple"
-            />
+                src="images/templeshuttle.jpg"
+                alt="shuttle taking people to temple"
+              />
               <figcaption>Temple Shuttle</figcaption>
             </figure>
-         
+          </div>
 
+          <div class="services-darker">
+            Full-time Missionaries also get unlimited access to the Family
+            History Center and Temple Shuttle.
+          </div>
         </div>
-       
-          <p class="services-darker">
-            <div class="services-darker">Full-time Missionaries also get unlimited access to the Family History Center and Temple Shuttle.</div>
-          </p>
-       
-        </div>
-
       </div>
-    
+
       <div class="form-page form-missionary" id="contact-form">
-      <form action="messagesent.html" method="get">
-        <h2 id="contact-form-title">Contact Us</h2>
-        <p>Please fill in this form to submit a question or contact us for more details.</p>
-        <hr />
+        <form action="messagesent.html" method="get">
+          <h2 id="contact-form-title">Contact Us</h2>
+          <p>
+            Please fill in this form to submit a question or contact us for more
+            details.
+          </p>
+          <hr />
 
-        <label for="fname">
-          Name*
-          <input type="text" id="fname" name="fname" required />
-        </label>
+          <label for="fname">
+            Name*
+            <input type="text" id="fname" name="fname" required />
+          </label>
 
-        <label for="email">
-          Email*
-          <input
-            id="email"
-            type="email"
-            placeholder="youremail@website.com"
-            name="email"
-            required
-          />
-        </label>
+          <label for="email">
+            Email*
+            <input
+              id="email"
+              type="email"
+              placeholder="youremail@website.com"
+              name="email"
+              required
+            />
+          </label>
 
-        <label for="description">
-          Question
-          <textarea
-            id="description"
-            name="description"
-            rows="4"
-            cols="50"
-          ></textarea>
-        </label>
+          <label for="description">
+            Question
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </label>
 
-        <input type="hidden" id="DateTime" name="DateTime" value="" />
+          <input type="hidden" id="DateTime" name="DateTime" value="" />
 
-        <button type="submit" class="signupbtn">Submit</button>
-      </form>
-    </div>
- 
+          <button type="submit" class="signupbtn">Submit</button>
+        </form>
+      </div>
 
       <div class="text-center">
         <a href="services.html"> <small> Back to Services Page. </small></a>
@@ -209,7 +204,7 @@
           <em>info@templeinn.com</em>
           <p>+1 356-226-2222</p>
           <div>
-            <a href="https://goo.gl/maps/q9C4aw1A9jrzmw5r5">
+            <a href="https://goo.gl/maps/q9C4aw1A9jrzmw5r5" target="_blank">
               📍 Location on Map
             </a>
           </div>
