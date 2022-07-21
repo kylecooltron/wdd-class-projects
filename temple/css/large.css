@@ -347,6 +347,141 @@ margin-right: 4em;
   box-shadow: none;
 }
 
+.reception-food-stack
+{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.reception-food-stack div:nth-child(1)
+{
+    grid-row: 1/4;
+  grid-column: 1/2;
+  padding: 3em 2em 2em 2em;
+  width: 100%;
+}
+.reception-food-stack div:nth-child(1) img
+{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.reception-food-stack h2
+{
+text-align: left;
+padding: 2em 1em 1em 0.5em;
+grid-row: 1/2;
+grid-column: 2/3;
+align-self: flex-end;
+}
+
+.reception-food-stack p
+{
+grid-row: 2/3;
+grid-column: 2/3;
+margin: 1em 2em 1em 1em;
+}
+
+.reception-food-stack div:nth-child(4)
+{
+
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: flex-end;
+  padding: 1em 2em 2em 1em;
+}
+
+
+.services .services-smaller
+{
+   padding: 1em 1em 1em 10vw;
+}
+.services .services-smaller h2
+{
+text-align: left;
+padding-left: 3vw;
+}
+
+
+
+.reception-text-stack h2
+{
+
+font-size: 6.5em;
+
+}
+
+.reception-text-stack h3
+{
+font-size: 4.5em;
+}
+
+.reception-text-stack img
+{
+
+    padding: 5em 1em 1em 10em;
+    text-align: center;
+
+}
+
+
+
+
+
+.missionary-stack
+{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.missionary-stack div:nth-child(1)
+{
+    grid-row: 1/4;
+  grid-column: 1/2;
+  padding: 3em 2em 2em 2em;
+  width: 100%;
+}
+.missionary-stack div:nth-child(1) img
+{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.missionary-stack h2
+{
+text-align: left;
+padding: 2em 1em 1em 0.5em;
+grid-row: 1/2;
+grid-column: 2/3;
+align-self: flex-end;
+
+
+  position: inherit;
+  top: auto;
+  width: 100%;
+
+
+}
+
+.missionary-stack p
+{
+grid-row: 2/3;
+grid-column: 2/3;
+margin: 1em 2em 1em 1em;
+}
+
+.missionary-stack div:nth-child(4)
+{
+
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: flex-end;
+  padding: 1em 2em 2em 1em;
+}
+
+
 
 
 
