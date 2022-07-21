@@ -444,6 +444,14 @@ align-self: center;
  grid-template-columns: 1fr 1fr;
 }
 
+.reception-food-stack .catering-menu div
+{
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    width: 100%;
+}
+
 /*----------- FOOTER --------------*/
     
 .foot-logo-box{

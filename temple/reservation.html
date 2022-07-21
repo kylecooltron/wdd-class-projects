@@ -101,10 +101,10 @@
               <input id="phone" type="tel" name="phone" required />
             </label>
 
-            <label for="homestate">
+            <label>
               Home State
               <input type="text" list="homestate" />
-              <datalist name="homestate" id="homestate">
+              <datalist id="homestate">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -164,6 +164,7 @@
             <label for="location">
               Location
               <select name="location" id="location" required>
+                <option value="" disabled selected>Select a location</option>
                 <option value="oakla">Oakland Temple Inn & Suites</option>
                 <option value="albuq">Albuquerque Temple Inn</option>
                 <option value="seatt">Seattle Temple Inn & Suites</option>
@@ -174,6 +175,9 @@
             <label for="rooms">
               Rooms
               <select name="rooms" id="rooms" required>
+                <option value="" disabled selected>
+                  Select number of rooms
+                </option>
                 <option value="1">Single Room</option>
                 <option value="2">2 Rooms</option>
                 <option value="3">3 Rooms</option>
@@ -219,6 +223,9 @@
             <label for="nights">
               Nights Staying
               <select name="nights" id="nights" required>
+                <option value="" disabled selected>
+                  Select how many nights
+                </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

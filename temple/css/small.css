@@ -457,7 +457,12 @@ border-radius: 0.5em;
     letter-spacing: 0.1em;
 }
 
-
+.goldspotlight h3
+{
+    display: inline-block;
+    font-weight: normal;
+    color: inherit;
+}
 
 
 
@@ -517,17 +522,15 @@ padding-right: 0.3em;
     position: relative;
 }
 
-#spotlight2 h2
+.spotlighth2
 {
     position: absolute;
     top: 0.7em;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0 0 0.2em 0;
+    left: 0;
     width: 100%;
     text-shadow: -3px 3px 3px rgb(21, 63, 110), 3px 3px 3px rgba(0, 0, 0, 0.514);
     background-color: rgba(255, 255, 255, 0.185);
+  
 }
 
 .spotlight form
@@ -538,7 +541,6 @@ padding-right: 0.3em;
     transform: translateX(-15px);
  
     padding: 0;
-   
 }
 
 
@@ -1008,7 +1010,7 @@ form label textarea
     border: 1px solid rgb(3, 154, 255);
 }
 
-#services-hr
+.services-hr
 {
     border: 1px solid rgb(22, 74, 122);
 }
@@ -1315,12 +1317,19 @@ display: inline-block
     padding: 0em 2em 2em 2em;
 }
 
+.reception-food-stack .catering-menu div
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 #cateringtitle
 {
 background-color: rgba(128, 128, 128, 0.452);
 margin: 0 3em;
 }
-.catering-menu ul h3
+.catering-menu h3
 {
 color: rgb(117, 62, 10);
 }

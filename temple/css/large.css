@@ -521,7 +521,13 @@ margin-bottom: 1.5em;
 }
 
 
-
+.reception-food-stack .catering-menu div
+{
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    width: 100%;
+}
 
 
 
