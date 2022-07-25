@@ -6,7 +6,7 @@ const weather_APIurl = "//api.openweathermap.org/data/2.5/weather?id=5378538&app
 
 // FORECAST API URL with arguments  
 const forecast_APIurl = "//api.openweathermap.org/data/2.5/forecast?id=5378538&appid=7c894b69ae7ae90c1d0eac7949ebdf76&units=imperial"
-      
+
 function interpolate_color(startcolor, endcolor, percent){
   // interpolates between two rgb colors
   let rgb = [];
@@ -58,7 +58,7 @@ fetch(weather_APIurl)
     weatherIcon.setAttribute('alt', desc);
     // weather icon caption
     captionDesc.textContent = desc;
-  });
+});
 
 
 function getDayName(dt)

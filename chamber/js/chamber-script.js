@@ -51,8 +51,8 @@
   // derive the current date using a date object
   const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
-  var datefields = document.querySelectorAll(".date");
-  for (var i = 0; i < datefields.length; i++) {
+  const datefields = document.querySelectorAll(".date");
+  for (let i = 0; i < datefields.length; i++) {
   //set dates text to full date
   datefields[i].innerHTML = `<em>${fulldate}</em>`;
   }

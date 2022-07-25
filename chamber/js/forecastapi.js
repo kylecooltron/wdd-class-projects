@@ -29,7 +29,7 @@ function get_temp_color(temperature){
 
 function getDayName(dt)
 {
-    var date = new Date(dt * 1000);
+    let date = new Date(dt * 1000);
     
     return date.toLocaleDateString(getDayName, { weekday: 'long' });    
         
@@ -40,7 +40,7 @@ function displayForecast(forecastinfo){
   let i = 0;
   let day_name_last = "";
   
-  for(var j=0; j<4; j++){
+  for(let j=0; j<4; j++){
 
     
     let day = getDayName(forecastinfo.list[i].dt);
